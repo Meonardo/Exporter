@@ -15,6 +15,13 @@
 		A009EEFA23BE458E00F6F675 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A009EEF923BE458E00F6F675 /* Preview Assets.xcassets */; };
 		A009EEFD23BE458E00F6F675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A009EEFB23BE458E00F6F675 /* Main.storyboard */; };
 		A009EF0923BE458F00F6F675 /* ExporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF0823BE458F00F6F675 /* ExporterTests.swift */; };
+		A009EF1D23BE471200F6F675 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1423BE471200F6F675 /* Invoice.swift */; };
+		A009EF1E23BE471200F6F675 /* PackingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1523BE471200F6F675 /* PackingList.swift */; };
+		A009EF1F23BE471200F6F675 /* CommercialInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1623BE471200F6F675 /* CommercialInvoice.swift */; };
+		A009EF2023BE471200F6F675 /* ProformaInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1723BE471200F6F675 /* ProformaInvoice.swift */; };
+		A009EF2123BE471200F6F675 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1923BE471200F6F675 /* Order.swift */; };
+		A009EF2223BE471200F6F675 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1A23BE471200F6F675 /* Product.swift */; };
+		A009EF2323BE471200F6F675 /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1C23BE471200F6F675 /* Buyer.swift */; };
 		D937CDA4426052BC719126BF /* Pods_ExporterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A209B3D0F5D787095DF1F27F /* Pods_ExporterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +50,13 @@
 		A009EF0423BE458F00F6F675 /* ExporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A009EF0823BE458F00F6F675 /* ExporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExporterTests.swift; sourceTree = "<group>"; };
 		A009EF0A23BE458F00F6F675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A009EF1423BE471200F6F675 /* Invoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		A009EF1523BE471200F6F675 /* PackingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingList.swift; sourceTree = "<group>"; };
+		A009EF1623BE471200F6F675 /* CommercialInvoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommercialInvoice.swift; sourceTree = "<group>"; };
+		A009EF1723BE471200F6F675 /* ProformaInvoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProformaInvoice.swift; sourceTree = "<group>"; };
+		A009EF1923BE471200F6F675 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A009EF1A23BE471200F6F675 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A009EF1C23BE471200F6F675 /* Buyer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buyer.swift; sourceTree = "<group>"; };
 		A209B3D0F5D787095DF1F27F /* Pods_ExporterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExporterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA4F08915EF14E27E5812D /* Pods-ExporterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExporterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExporterTests/Pods-ExporterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D02F8DCFA1CE0848E0F87B61 /* Pods_Exporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +115,9 @@
 		A009EEEE23BE458E00F6F675 /* Exporter */ = {
 			isa = PBXGroup;
 			children = (
+				A009EF1B23BE471200F6F675 /* Buyer */,
+				A009EF1823BE471200F6F675 /* Commodity */,
+				A009EF1323BE471200F6F675 /* Sheet */,
 				A009EEEF23BE458E00F6F675 /* AppDelegate.swift */,
 				A009EEF123BE458E00F6F675 /* ContentView.swift */,
 				A009EEF623BE458E00F6F675 /* Assets.xcassets */,
@@ -128,6 +145,34 @@
 				A009EF0A23BE458F00F6F675 /* Info.plist */,
 			);
 			path = ExporterTests;
+			sourceTree = "<group>";
+		};
+		A009EF1323BE471200F6F675 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				A009EF1423BE471200F6F675 /* Invoice.swift */,
+				A009EF1523BE471200F6F675 /* PackingList.swift */,
+				A009EF1623BE471200F6F675 /* CommercialInvoice.swift */,
+				A009EF1723BE471200F6F675 /* ProformaInvoice.swift */,
+			);
+			path = Sheet;
+			sourceTree = "<group>";
+		};
+		A009EF1823BE471200F6F675 /* Commodity */ = {
+			isa = PBXGroup;
+			children = (
+				A009EF1923BE471200F6F675 /* Order.swift */,
+				A009EF1A23BE471200F6F675 /* Product.swift */,
+			);
+			path = Commodity;
+			sourceTree = "<group>";
+		};
+		A009EF1B23BE471200F6F675 /* Buyer */ = {
+			isa = PBXGroup;
+			children = (
+				A009EF1C23BE471200F6F675 /* Buyer.swift */,
+			);
+			path = Buyer;
 			sourceTree = "<group>";
 		};
 		D4C9528971637357CB06CDA9 /* Pods */ = {
@@ -303,6 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A009EEF223BE458E00F6F675 /* ContentView.swift in Sources */,
+				A009EF1E23BE471200F6F675 /* PackingList.swift in Sources */,
+				A009EF2223BE471200F6F675 /* Product.swift in Sources */,
+				A009EF2323BE471200F6F675 /* Buyer.swift in Sources */,
+				A009EF2123BE471200F6F675 /* Order.swift in Sources */,
+				A009EF1D23BE471200F6F675 /* Invoice.swift in Sources */,
+				A009EF2023BE471200F6F675 /* ProformaInvoice.swift in Sources */,
+				A009EF1F23BE471200F6F675 /* CommercialInvoice.swift in Sources */,
 				A009EEF023BE458E00F6F675 /* AppDelegate.swift in Sources */,
 				A009EEF523BE458E00F6F675 /* Exporter.xcdatamodeld in Sources */,
 			);
