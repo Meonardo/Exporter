@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct Buyer {
+struct Buyer: Identifiable {
     var id: String
     var name: String
 	var company: String
-	var contry: String
+	var country: String
 	var address: String
 	var contact: String
 	

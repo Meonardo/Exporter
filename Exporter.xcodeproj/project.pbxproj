@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		6975F5566F1D5D45FDF46556 /* Pods_Exporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02F8DCFA1CE0848E0F87B61 /* Pods_Exporter.framework */; };
 		A009EEF023BE458E00F6F675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EEEF23BE458E00F6F675 /* AppDelegate.swift */; };
-		A009EEF223BE458E00F6F675 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EEF123BE458E00F6F675 /* ContentView.swift */; };
-		A009EEF523BE458E00F6F675 /* Exporter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A009EEF323BE458E00F6F675 /* Exporter.xcdatamodeld */; };
 		A009EEF723BE458E00F6F675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A009EEF623BE458E00F6F675 /* Assets.xcassets */; };
 		A009EEFA23BE458E00F6F675 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A009EEF923BE458E00F6F675 /* Preview Assets.xcassets */; };
 		A009EEFD23BE458E00F6F675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A009EEFB23BE458E00F6F675 /* Main.storyboard */; };
@@ -22,6 +20,8 @@
 		A009EF2123BE471200F6F675 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1923BE471200F6F675 /* Order.swift */; };
 		A009EF2223BE471200F6F675 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1A23BE471200F6F675 /* Product.swift */; };
 		A009EF2323BE471200F6F675 /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1C23BE471200F6F675 /* Buyer.swift */; };
+		A00EB0C223BF7CE600A12512 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00EB0C123BF7CE600A12512 /* MainView.swift */; };
+		A00EB0C423BF815600A12512 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00EB0C323BF815600A12512 /* ExportView.swift */; };
 		D937CDA4426052BC719126BF /* Pods_ExporterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A209B3D0F5D787095DF1F27F /* Pods_ExporterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +40,6 @@
 		8FC0236A1DF98ADF6D51ACAF /* Pods-Exporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exporter/Pods-Exporter.release.xcconfig"; sourceTree = "<group>"; };
 		A009EEEC23BE458E00F6F675 /* Exporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A009EEEF23BE458E00F6F675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A009EEF123BE458E00F6F675 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A009EEF423BE458E00F6F675 /* Exporter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Exporter.xcdatamodel; sourceTree = "<group>"; };
 		A009EEF623BE458E00F6F675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A009EEF923BE458E00F6F675 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A009EEFC23BE458E00F6F675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		A009EF1923BE471200F6F675 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		A009EF1A23BE471200F6F675 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A009EF1C23BE471200F6F675 /* Buyer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buyer.swift; sourceTree = "<group>"; };
+		A00EB0C123BF7CE600A12512 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A00EB0C323BF815600A12512 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
 		A209B3D0F5D787095DF1F27F /* Pods_ExporterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExporterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA4F08915EF14E27E5812D /* Pods-ExporterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExporterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExporterTests/Pods-ExporterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D02F8DCFA1CE0848E0F87B61 /* Pods_Exporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,12 +119,12 @@
 				A009EF1823BE471200F6F675 /* Commodity */,
 				A009EF1323BE471200F6F675 /* Sheet */,
 				A009EEEF23BE458E00F6F675 /* AppDelegate.swift */,
-				A009EEF123BE458E00F6F675 /* ContentView.swift */,
+				A00EB0C123BF7CE600A12512 /* MainView.swift */,
+				A00EB0C323BF815600A12512 /* ExportView.swift */,
 				A009EEF623BE458E00F6F675 /* Assets.xcassets */,
 				A009EEFB23BE458E00F6F675 /* Main.storyboard */,
 				A009EEFE23BE458E00F6F675 /* Info.plist */,
 				A009EEFF23BE458E00F6F675 /* Exporter.entitlements */,
-				A009EEF323BE458E00F6F675 /* Exporter.xcdatamodeld */,
 				A009EEF823BE458E00F6F675 /* Preview Content */,
 			);
 			path = Exporter;
@@ -347,16 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A009EEF223BE458E00F6F675 /* ContentView.swift in Sources */,
 				A009EF1E23BE471200F6F675 /* PackingList.swift in Sources */,
 				A009EF2223BE471200F6F675 /* Product.swift in Sources */,
 				A009EF2323BE471200F6F675 /* Buyer.swift in Sources */,
 				A009EF2123BE471200F6F675 /* Order.swift in Sources */,
+				A00EB0C423BF815600A12512 /* ExportView.swift in Sources */,
 				A009EF1D23BE471200F6F675 /* Invoice.swift in Sources */,
 				A009EF2023BE471200F6F675 /* ProformaInvoice.swift in Sources */,
+				A00EB0C223BF7CE600A12512 /* MainView.swift in Sources */,
 				A009EF1F23BE471200F6F675 /* CommercialInvoice.swift in Sources */,
 				A009EEF023BE458E00F6F675 /* AppDelegate.swift in Sources */,
-				A009EEF523BE458E00F6F675 /* Exporter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +559,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NR5667HL9G;
@@ -582,6 +583,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = NR5667HL9G;
@@ -630,19 +632,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A009EEF323BE458E00F6F675 /* Exporter.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A009EEF423BE458E00F6F675 /* Exporter.xcdatamodel */,
-			);
-			currentVersion = A009EEF423BE458E00F6F675 /* Exporter.xcdatamodel */;
-			path = Exporter.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A009EEE423BE458D00F6F675 /* Project object */;
 }
