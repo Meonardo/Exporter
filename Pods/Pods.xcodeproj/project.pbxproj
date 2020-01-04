@@ -7,87 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0053E35EA6AEC73A8232B351A9E80F3E /* styles.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 1161C42382F2AFD0989AE73352E46ED2 /* styles.h */; };
-		03A0DA5EB649F7C636E579BD995DEF07 /* relationships.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = D1D7E1404A2C513A3DCC18298E2CCFE6 /* relationships.h */; };
+		0053E35EA6AEC73A8232B351A9E80F3E /* styles.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 2898AAE3DAA6F833364ECCAA94864CC5 /* styles.h */; };
+		0370787809FDCBCB15C2D4DD22190732 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B99F62A1C27E554CEDD749D5F19F990 /* FMDatabasePool.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		03A0DA5EB649F7C636E579BD995DEF07 /* relationships.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 2E4A52E0D23F1C949EA7DD5CB5546B1F /* relationships.h */; };
 		041D47A28EE3D38814371EE055863A81 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
-		075FD9CB61D7C5C05D10D6375B3D04AB /* chart.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 56A1D87E7A828B8D70F3D6E0E9A0466A /* chart.h */; };
-		0FA9199AB2C8A17BA597E563E217EE9E /* chart.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C270544AC1B1ED2101975192A6F2798 /* chart.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		0FF4658446D83ABDC016B8885411ED54 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BEF31FC8A5E1F542794B77B81074CF4 /* queue.h */; };
-		101D462B0A38D18F458085DB57D02466 /* content_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 901FCDD724BA40F45CBDE7CDE063882E /* content_types.h */; };
-		1225AE315B5A15B5A9F21046938A4BC5 /* worksheet.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = CD525EF5186664D4F0348E4BDE702680 /* worksheet.h */; };
-		146271A4A86FABF953C0E032CD877233 /* libxlsxwriter-umbrella.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = A0C176010B4E1D37B0F5F7A706AD3DD8 /* libxlsxwriter-umbrella.h */; };
-		1BCA9DCFE72A66E55C446C87FF003C08 /* hash_table.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 9AA4D20A76BB9A42E7D6B9D85C3D8E44 /* hash_table.h */; };
-		1C8556251F01AAE4B52ED4EEADEFB570 /* tree.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 8DBEBA33C3475CD2BAC5AFDC687E246F /* tree.h */; };
-		1FE21E74CB3216F64E411EC0416F19A7 /* ioapi.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = C63B6981C8FD8BEE9969EC41D441B940 /* ioapi.h */; };
-		24F612C966CE193D4C51DEC9E3A3CDB7 /* theme.c in Sources */ = {isa = PBXBuildFile; fileRef = 99C085AD415F5E871B5CFDFE32356828 /* theme.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		2B122DE920351721000321E35281A5A8 /* relationships.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B9126AF879C73C8FA110D2EF9E8ABDE /* relationships.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		30A2634F0C0ADE1AC50527D38ED94E7E /* theme.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 3904CF61D097DDBD90C4B9C3EF51E7B5 /* theme.h */; };
-		320396A7BAD262CED1122C2BA46F1227 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = C63B6981C8FD8BEE9969EC41D441B940 /* ioapi.h */; };
-		32AE8E9BD34F9E006A0F86CFA2EF537B /* xlsxwriter.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0BA2018C8F587001C93E7FD6D8AF01E8 /* xlsxwriter.h */; };
-		38892A11B1E140BBC3EC1BF346633CEF /* styles.h in Headers */ = {isa = PBXBuildFile; fileRef = 1161C42382F2AFD0989AE73352E46ED2 /* styles.h */; };
-		3E8A5DC62B7C39050B24CE3D9D930AD6 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD483EACE435277884794CE116EB787 /* zip.h */; };
-		40D8C0A1DDE64484C9B5836FB8FA03F8 /* libxlsxwriter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C176010B4E1D37B0F5F7A706AD3DD8 /* libxlsxwriter-umbrella.h */; };
+		075FD9CB61D7C5C05D10D6375B3D04AB /* chart.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 8D12AE3C22FECAE962F23DBB80E8A2C8 /* chart.h */; };
+		0C93E589E31C5CBCA37586544BEC1005 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9D7C010652B791E6FFC8A87BBD02A /* FMDatabaseAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0CA022FE5CC3F8A1ECC6699F10BF81EE /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2514C38FD2D161138839752AEB337604 /* FMDatabaseQueue.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0F72AA9F03EC61C6D857941E0B45811A /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = FE841C9E4C96973F8BA2E35CFFE18290 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA9199AB2C8A17BA597E563E217EE9E /* chart.c in Sources */ = {isa = PBXBuildFile; fileRef = 96EDA2E6BBECC5DC814322FA7B6B5DCA /* chart.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		0FF4658446D83ABDC016B8885411ED54 /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF02878B804951CE2496A095C029F93 /* queue.h */; };
+		101D462B0A38D18F458085DB57D02466 /* content_types.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC35DF188EAD002E6AC84CBC4968DFB /* content_types.h */; };
+		10F1A85B54BBD4CAE5B7E83F811B3DC4 /* Pods-Exporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 877FD1017E19DD16BBEE4AAD647AD7CB /* Pods-Exporter-dummy.m */; };
+		1225AE315B5A15B5A9F21046938A4BC5 /* worksheet.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 4A9EB6725343A306D1C5856A126873A0 /* worksheet.h */; };
+		146271A4A86FABF953C0E032CD877233 /* libxlsxwriter-umbrella.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 0A77670C13D032A28E721D7002FCB025 /* libxlsxwriter-umbrella.h */; };
+		1BCA9DCFE72A66E55C446C87FF003C08 /* hash_table.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 43D46E90DCCCC3366ABAE9536997F61B /* hash_table.h */; };
+		1C8556251F01AAE4B52ED4EEADEFB570 /* tree.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 140FE2F49D6CBC35888DFAE44F0B0193 /* tree.h */; };
+		1FE21E74CB3216F64E411EC0416F19A7 /* ioapi.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = E28AA8E63EF3ED7136D1E4A010A58A89 /* ioapi.h */; };
+		219BADA8C55CF72273F5A734AA0E0EF6 /* FMDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D56029D95632A45987AA8F9375191CF2 /* FMDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F612C966CE193D4C51DEC9E3A3CDB7 /* theme.c in Sources */ = {isa = PBXBuildFile; fileRef = 44F5A4439EF35A3E9A047EBC21C0CA65 /* theme.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		25A87391479E232433382651FFD900B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
+		2B122DE920351721000321E35281A5A8 /* relationships.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A4AEBF6CA37B1F675EEFA11D4302 /* relationships.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		30A2634F0C0ADE1AC50527D38ED94E7E /* theme.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 1E3EF83606605A695FC2870FDFEA8B1C /* theme.h */; };
+		320396A7BAD262CED1122C2BA46F1227 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = E28AA8E63EF3ED7136D1E4A010A58A89 /* ioapi.h */; };
+		32AE8E9BD34F9E006A0F86CFA2EF537B /* xlsxwriter.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 8DDB1735EC11AF227EA979CA8415E315 /* xlsxwriter.h */; };
+		37296B38A55A40BEF65ECFC9B0527D8E /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = A44937119E316123B4E398BD6AFFEF16 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38892A11B1E140BBC3EC1BF346633CEF /* styles.h in Headers */ = {isa = PBXBuildFile; fileRef = 2898AAE3DAA6F833364ECCAA94864CC5 /* styles.h */; };
+		3E8A5DC62B7C39050B24CE3D9D930AD6 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 626669BD82A5D572E491450FBCF73BF8 /* zip.h */; };
+		40D8C0A1DDE64484C9B5836FB8FA03F8 /* libxlsxwriter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A77670C13D032A28E721D7002FCB025 /* libxlsxwriter-umbrella.h */; };
 		430730B5B2E5D6FF75B7E6DC7C34F3C2 /* Pods-ExporterTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B03C95127882DB0AC53A1D57011EF /* Pods-ExporterTests-dummy.m */; };
-		4310E4CAA0079A906F23643347F058EC /* xmlwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E31A68DBF7D8BA862FE741F5BB63044 /* xmlwriter.h */; };
-		45FE13DEDA98A154934FFCA0A47C9B68 /* Pods-Exporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1CDA7C196BE6E81A5898C723E60AF6 /* Pods-Exporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4310E4CAA0079A906F23643347F058EC /* xmlwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8859F7B233BB22563010CE7B3ACCCF55 /* xmlwriter.h */; };
+		46704C7E84BD304F53BE153EA586AAD0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
 		4C94A2D0F9312DC642E7C8B1B3901D03 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
-		5846E4DAA6D144BA12ED53D51F065D08 /* queue.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 5BEF31FC8A5E1F542794B77B81074CF4 /* queue.h */; };
-		59C83A181CA4B2AEC5AF57793BFB83CB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 42E3BD7801114CB51092B92231B6AA92 /* core.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		5EDB5A44F4910F82F82F7E43046E40C6 /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = D464AE49F0662A06F7431D60C042B379 /* xmlwriter.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		5FEF0A96C43B81E582935FDB25C180D0 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DBEBA33C3475CD2BAC5AFDC687E246F /* tree.h */; };
-		6263C7C5F454A25043D28172179D28A1 /* packager.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 383E7FA6994FDD0F74AB412D25C602DC /* packager.h */; };
-		65497F6990185652B152AF934C510617 /* custom.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C958E7F9AEB65B1B83EB25F4927B13 /* custom.h */; };
-		67EA4D768B31C8437EBAB5463E645DB9 /* hash_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA4D20A76BB9A42E7D6B9D85C3D8E44 /* hash_table.h */; };
-		6923552436D6950C42E73002455CFCDA /* packager.h in Headers */ = {isa = PBXBuildFile; fileRef = 383E7FA6994FDD0F74AB412D25C602DC /* packager.h */; };
-		6D7EB66F8771DCBA993C24C0F548E3D9 /* common.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 214D8DB3528363CA849D7030A826651C /* common.h */; };
+		538F74CC22D0D13E9D79AC3ECC6DFFE7 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1456013C72D73EDC0ED262155D84C0 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5846E4DAA6D144BA12ED53D51F065D08 /* queue.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 6CF02878B804951CE2496A095C029F93 /* queue.h */; };
+		59C83A181CA4B2AEC5AF57793BFB83CB /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 1371ECDC807334D355EB9D23E81E489F /* core.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		5EDB5A44F4910F82F82F7E43046E40C6 /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 3938A078BE93736AC2747F56F154463A /* xmlwriter.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		5FEF0A96C43B81E582935FDB25C180D0 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 140FE2F49D6CBC35888DFAE44F0B0193 /* tree.h */; };
+		6263C7C5F454A25043D28172179D28A1 /* packager.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 78CF472A187495863039587A7A352E36 /* packager.h */; };
+		65497F6990185652B152AF934C510617 /* custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F777DF06A929209D753E4C27B9A7BAC /* custom.h */; };
+		67EA4D768B31C8437EBAB5463E645DB9 /* hash_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D46E90DCCCC3366ABAE9536997F61B /* hash_table.h */; };
+		6923552436D6950C42E73002455CFCDA /* packager.h in Headers */ = {isa = PBXBuildFile; fileRef = 78CF472A187495863039587A7A352E36 /* packager.h */; };
+		6C58288FB8A294C16676BF03E51AA34D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5577452D2C344AC30AF334205D5E8CB2 /* FMDatabase.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6D7EB66F8771DCBA993C24C0F548E3D9 /* common.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = CD0D372C1F008133D0E16DEDBDFBBB32 /* common.h */; };
 		708868D2A0C5FE7050F9D8662ED8BCD6 /* Pods-ExporterTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACA5AA45B4498E734CC2069ADBB5E41 /* Pods-ExporterTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76A268D236CFE7B32555D18EEBBF34DF /* worksheet.h in Headers */ = {isa = PBXBuildFile; fileRef = CD525EF5186664D4F0348E4BDE702680 /* worksheet.h */; };
-		79E2013DCDF6A864325653F396038EF7 /* custom.c in Sources */ = {isa = PBXBuildFile; fileRef = 11654CCEE940C0E135145D84C0F44F2D /* custom.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		7BD2F6AF3F88A0ABDE9AE9A8864EC5DD /* drawing.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 38632B15CF6A7C2A094E2F7653CCC685 /* drawing.h */; };
-		7D6D547B3B6D7192F2C5DE3B0697AA5D /* custom.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = C5C958E7F9AEB65B1B83EB25F4927B13 /* custom.h */; };
-		8253E9E11DE25A0546275D9FA7E464D2 /* tmpfileplus.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 99A0F46B821615519E91E2BC7C2BC855 /* tmpfileplus.h */; };
-		89D1D504CC05BDC32F36D71F743B49CF /* chart.h in Headers */ = {isa = PBXBuildFile; fileRef = 56A1D87E7A828B8D70F3D6E0E9A0466A /* chart.h */; };
-		8B5C08805D00CBE384C4931129A2A34C /* content_types.c in Sources */ = {isa = PBXBuildFile; fileRef = 9028789A0CD7FEF233E7B3BBB1851BC4 /* content_types.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		8BCA9DFDB9A8F1799B74028D44B37814 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EFBAE032575E2535D8D94A4FF3017DE /* utility.h */; };
-		8BD292D4825E0F506BD3930831A05837 /* utility.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 9EFBAE032575E2535D8D94A4FF3017DE /* utility.h */; };
-		8BDD9BAE8281901771F73E6971B75507 /* libxlsxwriter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1A2C0E922BB6603694BB9BBF7268D /* libxlsxwriter-dummy.m */; };
-		90DDDD48A33D8B6D684F8F5C034762F9 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 3206154256E7390C79A092E53D5BB18A /* app.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		91C85B55F1CE8B4A73C0DF5368A9A32F /* theme.h in Headers */ = {isa = PBXBuildFile; fileRef = 3904CF61D097DDBD90C4B9C3EF51E7B5 /* theme.h */; };
-		94C5C3969D5A787AE6FC835A4F5A6DF5 /* hash_table.c in Sources */ = {isa = PBXBuildFile; fileRef = A1EAF30FCCC184E943B7338D1001082D /* hash_table.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		95DCAAF78E5F239F53A76953038C306B /* tmpfileplus.c in Sources */ = {isa = PBXBuildFile; fileRef = 3018A5C901CDF8528C5A2FC08279E0EF /* tmpfileplus.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		9FFA2A819B45ACF3D76C7FD82F004F03 /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8C33E21D573D64E097C4BDA4F4B0E9 /* format.h */; };
-		A2E8FCD143829F95FB5DDF68AC02E71D /* zip.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 2DD483EACE435277884794CE116EB787 /* zip.h */; };
-		A5C40489102EF6A3C6B6D83E892923ED /* format.c in Sources */ = {isa = PBXBuildFile; fileRef = EAE70031ECA9C68ED25B870A45558974 /* format.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		A8A5EF2E351F2F3CF2F61CC78163BC6E /* xmlwriter.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 7E31A68DBF7D8BA862FE741F5BB63044 /* xmlwriter.h */; };
-		AA677E11836C331B21D8FCBB39CD22E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */; };
-		ABEDD2D20E654795B9525E9CEB193929 /* worksheet.c in Sources */ = {isa = PBXBuildFile; fileRef = 2132A9B6BDB3FC39C3C928314E84082C /* worksheet.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		AEE1DE94A208CFECA9230ECD05A7685A /* shared_strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 8B0B59BFB3A67FA894D94A3221C38C1B /* shared_strings.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		B70E8B3796A87886F523B296435F3E70 /* xlsxwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA2018C8F587001C93E7FD6D8AF01E8 /* xlsxwriter.h */; };
-		B7687DDC22F2C848A1F133E7A87F427B /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = EB78A83419242E201AD1B6C4C57CDD9A /* ioapi.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		B847462DE942740D6FB91EEBFBCBB6DB /* tmpfileplus.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A0F46B821615519E91E2BC7C2BC855 /* tmpfileplus.h */; };
-		BDDC2EFED4B11C79AA3755C8243F1B64 /* app.h in Headers */ = {isa = PBXBuildFile; fileRef = DF972F8E8B7611FFB639D0425BC7B804 /* app.h */; };
-		C639DF02E41E5695ADCCC1CE179E06EA /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = BB9876295CEB7C5A38AA77CF09EB6A5E /* utility.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		CA84162D7814C75BC81CB337DDAEACF5 /* packager.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAE3CED294EC1B3102BD0C7038BC569 /* packager.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		CDC2FEEC2D9EC5AE8E6F146DC4433B93 /* relationships.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D7E1404A2C513A3DCC18298E2CCFE6 /* relationships.h */; };
-		D02141BB7DD2BD92D514E702AC1A23C9 /* drawing.c in Sources */ = {isa = PBXBuildFile; fileRef = 8935AD766A9CD07C1ABF4FE1416389FE /* drawing.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		D02C6DBEB977DEE3EDDE38620A4EA219 /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = 36760BCD727769AA69580557F15D43D8 /* workbook.h */; };
-		D492C2A1F5A09B428EE985AB0033BC8F /* Pods-Exporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 877FD1017E19DD16BBEE4AAD647AD7CB /* Pods-Exporter-dummy.m */; };
-		D87D06F1EC74FF6DDF465F24EE1340DE /* content_types.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 901FCDD724BA40F45CBDE7CDE063882E /* content_types.h */; };
-		D91E25ED921C17E91DFE25F09E4E0A16 /* app.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = DF972F8E8B7611FFB639D0425BC7B804 /* app.h */; };
-		DC97C72767BA048D98D85AD244BEB42B /* workbook.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 36760BCD727769AA69580557F15D43D8 /* workbook.h */; };
-		DF27DF496EBBD64AEEE4D1C1865038A4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 292134466199461928868EBEC6FEDE6C /* core.h */; };
-		E09DA6E867BF0C78AB80B224B9392A00 /* shared_strings.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 47DAFBA3DBBBD92806EA5BB82BE60204 /* shared_strings.h */; };
-		E369EEE66B3EE7A97EE92B5E5A47B87F /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 214D8DB3528363CA849D7030A826651C /* common.h */; };
-		E3AEB022A9F1BFEC2BA36791119C03DF /* drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 38632B15CF6A7C2A094E2F7653CCC685 /* drawing.h */; };
-		E7842698C7F71B275DE0DD7D902B7036 /* styles.c in Sources */ = {isa = PBXBuildFile; fileRef = 7267674208F9C984DA74F46F454B4534 /* styles.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		F0C9FAA002959A6823CA76B12A326204 /* workbook.c in Sources */ = {isa = PBXBuildFile; fileRef = F4CD8CA33CAD4DD69A6DC4380D84A7E3 /* workbook.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		F241BAA9485B92E7AFFD497284F0E140 /* shared_strings.h in Headers */ = {isa = PBXBuildFile; fileRef = 47DAFBA3DBBBD92806EA5BB82BE60204 /* shared_strings.h */; };
-		F5C5A2703AD71907FE736C25B4AA1066 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 136AE8EC0A1A67346B0987B76020272A /* zip.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
-		F8AAC558C92554DF82BCC644E4D01B32 /* core.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 292134466199461928868EBEC6FEDE6C /* core.h */; };
-		FCFEB4BC795C4C1CAAC054298575649C /* format.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = EF8C33E21D573D64E097C4BDA4F4B0E9 /* format.h */; };
+		7394E123FBD9832A5D6FD726D5D9470C /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CD7838160C8BF599C57F90F7518F9E9E /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76A268D236CFE7B32555D18EEBBF34DF /* worksheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9EB6725343A306D1C5856A126873A0 /* worksheet.h */; };
+		79E2013DCDF6A864325653F396038EF7 /* custom.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BEE465B014479A45038255E40CED1 /* custom.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		7BD2F6AF3F88A0ABDE9AE9A8864EC5DD /* drawing.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 423EBF0FCCD8008CB76DB17C32528CB0 /* drawing.h */; };
+		7D4E0D91FE60904C9FB50F6D447B8A30 /* FMDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8CB397F130FCD3F393187F78350E22 /* FMDB-dummy.m */; };
+		7D6D547B3B6D7192F2C5DE3B0697AA5D /* custom.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 2F777DF06A929209D753E4C27B9A7BAC /* custom.h */; };
+		8253E9E11DE25A0546275D9FA7E464D2 /* tmpfileplus.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = F9A2AC1D65116C0D57748A02FEDD0902 /* tmpfileplus.h */; };
+		89D1D504CC05BDC32F36D71F743B49CF /* chart.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D12AE3C22FECAE962F23DBB80E8A2C8 /* chart.h */; };
+		8B5C08805D00CBE384C4931129A2A34C /* content_types.c in Sources */ = {isa = PBXBuildFile; fileRef = 74A87FF059D5F36419E5EE95B56A9921 /* content_types.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		8BCA9DFDB9A8F1799B74028D44B37814 /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = F7EBD0ED4125DEBDE0E3558D9C4342C7 /* utility.h */; };
+		8BD292D4825E0F506BD3930831A05837 /* utility.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = F7EBD0ED4125DEBDE0E3558D9C4342C7 /* utility.h */; };
+		8BDD9BAE8281901771F73E6971B75507 /* libxlsxwriter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8312ACC3D3FF081F24950D6DAF6CD9B5 /* libxlsxwriter-dummy.m */; };
+		90DDDD48A33D8B6D684F8F5C034762F9 /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = 20978FC36B4E263A65C69CC0662CF9C4 /* app.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		91C85B55F1CE8B4A73C0DF5368A9A32F /* theme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3EF83606605A695FC2870FDFEA8B1C /* theme.h */; };
+		94C5C3969D5A787AE6FC835A4F5A6DF5 /* hash_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 9118A65DDAF387316B73207B3CF9B2F6 /* hash_table.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		95DCAAF78E5F239F53A76953038C306B /* tmpfileplus.c in Sources */ = {isa = PBXBuildFile; fileRef = A5796672D0D6536B647F31F548FC1B3C /* tmpfileplus.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		9FFA2A819B45ACF3D76C7FD82F004F03 /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = 8599B5B123DBD1AA8E6B4DC9C0649BDC /* format.h */; };
+		A2E8FCD143829F95FB5DDF68AC02E71D /* zip.h in Copy xlsxwriter/third_party Public Headers */ = {isa = PBXBuildFile; fileRef = 626669BD82A5D572E491450FBCF73BF8 /* zip.h */; };
+		A5C40489102EF6A3C6B6D83E892923ED /* format.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AEFC03FA4834E267221AE8FFDC103E3 /* format.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		A8A5EF2E351F2F3CF2F61CC78163BC6E /* xmlwriter.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 8859F7B233BB22563010CE7B3ACCCF55 /* xmlwriter.h */; };
+		A92CDCFE2DC0D002DE1F208C2FEAB545 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 39520A5F358CD66A2921A2212B00635B /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABEDD2D20E654795B9525E9CEB193929 /* worksheet.c in Sources */ = {isa = PBXBuildFile; fileRef = BD4FB172B8D94E5379167F31C99A8231 /* worksheet.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		AEE1DE94A208CFECA9230ECD05A7685A /* shared_strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 862869D77DC55F3CDEA75F07ED6414CC /* shared_strings.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		B70E8B3796A87886F523B296435F3E70 /* xlsxwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DDB1735EC11AF227EA979CA8415E315 /* xlsxwriter.h */; };
+		B7687DDC22F2C848A1F133E7A87F427B /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DEDED44BE8EE0159D070897A0A46B369 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		B847462DE942740D6FB91EEBFBCBB6DB /* tmpfileplus.h in Headers */ = {isa = PBXBuildFile; fileRef = F9A2AC1D65116C0D57748A02FEDD0902 /* tmpfileplus.h */; };
+		BB7ECF4DBE8D4BB38E6F2F08C326922A /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 185A9E0A30BF44FFE17882022EB73EC1 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDDC2EFED4B11C79AA3755C8243F1B64 /* app.h in Headers */ = {isa = PBXBuildFile; fileRef = E1361AFAAB8A455CA798970B88E83B18 /* app.h */; };
+		C639DF02E41E5695ADCCC1CE179E06EA /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 21AE764C39E92648A0446D304F1AFB36 /* utility.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		CA84162D7814C75BC81CB337DDAEACF5 /* packager.c in Sources */ = {isa = PBXBuildFile; fileRef = E86178C7317E889310EA0D61E53EEFF8 /* packager.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		CDC2FEEC2D9EC5AE8E6F146DC4433B93 /* relationships.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4A52E0D23F1C949EA7DD5CB5546B1F /* relationships.h */; };
+		D02141BB7DD2BD92D514E702AC1A23C9 /* drawing.c in Sources */ = {isa = PBXBuildFile; fileRef = A6E997BF3ADBADD4F1AF7F0A2B2607BF /* drawing.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		D02C6DBEB977DEE3EDDE38620A4EA219 /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = 012B83096817CA5BF4FEE2C417484737 /* workbook.h */; };
+		D87D06F1EC74FF6DDF465F24EE1340DE /* content_types.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = EBC35DF188EAD002E6AC84CBC4968DFB /* content_types.h */; };
+		D91E25ED921C17E91DFE25F09E4E0A16 /* app.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = E1361AFAAB8A455CA798970B88E83B18 /* app.h */; };
+		DBA895A1B2AFD36818087D67F31D8EA5 /* Pods-Exporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1CDA7C196BE6E81A5898C723E60AF6 /* Pods-Exporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC97C72767BA048D98D85AD244BEB42B /* workbook.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 012B83096817CA5BF4FEE2C417484737 /* workbook.h */; };
+		DF27DF496EBBD64AEEE4D1C1865038A4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DCDA66EC931F07FD4249CD8AEDADF30 /* core.h */; };
+		E09DA6E867BF0C78AB80B224B9392A00 /* shared_strings.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 51E2E70FD68E46F0021694AC0733800B /* shared_strings.h */; };
+		E369EEE66B3EE7A97EE92B5E5A47B87F /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0D372C1F008133D0E16DEDBDFBBB32 /* common.h */; };
+		E3AEB022A9F1BFEC2BA36791119C03DF /* drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 423EBF0FCCD8008CB76DB17C32528CB0 /* drawing.h */; };
+		E7842698C7F71B275DE0DD7D902B7036 /* styles.c in Sources */ = {isa = PBXBuildFile; fileRef = EE4632E85FD58E15C2CB138B07F9A4C9 /* styles.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		F0C9FAA002959A6823CA76B12A326204 /* workbook.c in Sources */ = {isa = PBXBuildFile; fileRef = 03B6692ADC473A1362F5ED9C3AB08E14 /* workbook.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		F241BAA9485B92E7AFFD497284F0E140 /* shared_strings.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E2E70FD68E46F0021694AC0733800B /* shared_strings.h */; };
+		F5C5A2703AD71907FE736C25B4AA1066 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D4E5FC97E61AEB4C6E73D1D55E3CFFFF /* zip.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		F8AAC558C92554DF82BCC644E4D01B32 /* core.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 4DCDA66EC931F07FD4249CD8AEDADF30 /* core.h */; };
+		FCFEB4BC795C4C1CAAC054298575649C /* format.h in Copy xlsxwriter Public Headers */ = {isa = PBXBuildFile; fileRef = 8599B5B123DBD1AA8E6B4DC9C0649BDC /* format.h */; };
+		FDD8729FB9BBE45B90107CA26BE5804B /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6F9BA27CAF8CD90B8692A9885D0AD /* FMResultSet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1E87E24E9369FB1327147B55FB40FC80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A534299236C2C3C0C940497BB968D49;
+			remoteInfo = libxlsxwriter;
+		};
 		2E1ED0F30BEA68A519C98AC858DFACCF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -95,12 +116,12 @@
 			remoteGlobalIDString = F885C09FE74A112D01F68576DEF32261;
 			remoteInfo = "Pods-Exporter";
 		};
-		7FD1EDE9DF8C96CEF609DBDAFCD72628 /* PBXContainerItemProxy */ = {
+		59BD79D858B9DF658ABB74DFB06A1C86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7A534299236C2C3C0C940497BB968D49;
-			remoteInfo = libxlsxwriter;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -163,94 +184,120 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0BA2018C8F587001C93E7FD6D8AF01E8 /* xlsxwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlsxwriter.h; path = include/xlsxwriter.h; sourceTree = "<group>"; };
-		0DE9D81E76781A804E9AD5796906F4C7 /* libxlsxwriter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "libxlsxwriter-Info.plist"; sourceTree = "<group>"; };
-		1161C42382F2AFD0989AE73352E46ED2 /* styles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = styles.h; path = include/xlsxwriter/styles.h; sourceTree = "<group>"; };
-		11654CCEE940C0E135145D84C0F44F2D /* custom.c */ = {isa = PBXFileReference; includeInIndex = 1; name = custom.c; path = src/custom.c; sourceTree = "<group>"; };
-		136AE8EC0A1A67346B0987B76020272A /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = third_party/minizip/zip.c; sourceTree = "<group>"; };
-		2132A9B6BDB3FC39C3C928314E84082C /* worksheet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = worksheet.c; path = src/worksheet.c; sourceTree = "<group>"; };
-		214D8DB3528363CA849D7030A826651C /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = include/xlsxwriter/common.h; sourceTree = "<group>"; };
+		012B83096817CA5BF4FEE2C417484737 /* workbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = workbook.h; path = include/xlsxwriter/workbook.h; sourceTree = "<group>"; };
+		03B6692ADC473A1362F5ED9C3AB08E14 /* workbook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = workbook.c; path = src/workbook.c; sourceTree = "<group>"; };
+		0A77670C13D032A28E721D7002FCB025 /* libxlsxwriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libxlsxwriter-umbrella.h"; path = "include/xlsxwriter/libxlsxwriter-umbrella.h"; sourceTree = "<group>"; };
+		0D36EAF02F52D85D3AE9AE49558A60C7 /* libxlsxwriter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libxlsxwriter.xcconfig; sourceTree = "<group>"; };
+		0F8CB397F130FCD3F393187F78350E22 /* FMDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FMDB-dummy.m"; sourceTree = "<group>"; };
+		1371ECDC807334D355EB9D23E81E489F /* core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = core.c; path = src/core.c; sourceTree = "<group>"; };
+		140FE2F49D6CBC35888DFAE44F0B0193 /* tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tree.h; path = include/xlsxwriter/third_party/tree.h; sourceTree = "<group>"; };
+		185A9E0A30BF44FFE17882022EB73EC1 /* FMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
+		1E3EF83606605A695FC2870FDFEA8B1C /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = theme.h; path = include/xlsxwriter/theme.h; sourceTree = "<group>"; };
+		20978FC36B4E263A65C69CC0662CF9C4 /* app.c */ = {isa = PBXFileReference; includeInIndex = 1; name = app.c; path = src/app.c; sourceTree = "<group>"; };
 		2199701F989E0729C701FE55FA21B625 /* Pods-Exporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Exporter.release.xcconfig"; sourceTree = "<group>"; };
+		21AE764C39E92648A0446D304F1AFB36 /* utility.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.c; path = src/utility.c; sourceTree = "<group>"; };
 		23F32E91A8C010ED1908A30F731A82A8 /* Pods-Exporter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Exporter-acknowledgements.markdown"; sourceTree = "<group>"; };
-		292134466199461928868EBEC6FEDE6C /* core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core.h; path = include/xlsxwriter/core.h; sourceTree = "<group>"; };
-		2DD483EACE435277884794CE116EB787 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = include/xlsxwriter/third_party/zip.h; sourceTree = "<group>"; };
-		3018A5C901CDF8528C5A2FC08279E0EF /* tmpfileplus.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tmpfileplus.c; path = third_party/tmpfileplus/tmpfileplus.c; sourceTree = "<group>"; };
-		3206154256E7390C79A092E53D5BB18A /* app.c */ = {isa = PBXFileReference; includeInIndex = 1; name = app.c; path = src/app.c; sourceTree = "<group>"; };
-		36760BCD727769AA69580557F15D43D8 /* workbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = workbook.h; path = include/xlsxwriter/workbook.h; sourceTree = "<group>"; };
+		2514C38FD2D161138839752AEB337604 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		2898AAE3DAA6F833364ECCAA94864CC5 /* styles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = styles.h; path = include/xlsxwriter/styles.h; sourceTree = "<group>"; };
+		2E4A52E0D23F1C949EA7DD5CB5546B1F /* relationships.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relationships.h; path = include/xlsxwriter/relationships.h; sourceTree = "<group>"; };
+		2F777DF06A929209D753E4C27B9A7BAC /* custom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = custom.h; path = include/xlsxwriter/custom.h; sourceTree = "<group>"; };
 		377460C751521BEB4CB8ED0F32D0378D /* Pods-Exporter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Exporter-Info.plist"; sourceTree = "<group>"; };
-		383E7FA6994FDD0F74AB412D25C602DC /* packager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = packager.h; path = include/xlsxwriter/packager.h; sourceTree = "<group>"; };
-		38632B15CF6A7C2A094E2F7653CCC685 /* drawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = drawing.h; path = include/xlsxwriter/drawing.h; sourceTree = "<group>"; };
-		3904CF61D097DDBD90C4B9C3EF51E7B5 /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = theme.h; path = include/xlsxwriter/theme.h; sourceTree = "<group>"; };
-		3C270544AC1B1ED2101975192A6F2798 /* chart.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chart.c; path = src/chart.c; sourceTree = "<group>"; };
-		42E3BD7801114CB51092B92231B6AA92 /* core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = core.c; path = src/core.c; sourceTree = "<group>"; };
-		47DAFBA3DBBBD92806EA5BB82BE60204 /* shared_strings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shared_strings.h; path = include/xlsxwriter/shared_strings.h; sourceTree = "<group>"; };
+		3938A078BE93736AC2747F56F154463A /* xmlwriter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
+		39520A5F358CD66A2921A2212B00635B /* FMDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = src/fmdb/FMDB.h; sourceTree = "<group>"; };
+		3AEFC03FA4834E267221AE8FFDC103E3 /* format.c */ = {isa = PBXFileReference; includeInIndex = 1; name = format.c; path = src/format.c; sourceTree = "<group>"; };
+		423EBF0FCCD8008CB76DB17C32528CB0 /* drawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = drawing.h; path = include/xlsxwriter/drawing.h; sourceTree = "<group>"; };
+		43D46E90DCCCC3366ABAE9536997F61B /* hash_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash_table.h; path = include/xlsxwriter/hash_table.h; sourceTree = "<group>"; };
+		44F5A4439EF35A3E9A047EBC21C0CA65 /* theme.c */ = {isa = PBXFileReference; includeInIndex = 1; name = theme.c; path = src/theme.c; sourceTree = "<group>"; };
+		4A9EB6725343A306D1C5856A126873A0 /* worksheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = worksheet.h; path = include/xlsxwriter/worksheet.h; sourceTree = "<group>"; };
 		4BAA70F8BFED43B4C76BD70CA431839F /* Pods-Exporter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Exporter-frameworks.sh"; sourceTree = "<group>"; };
 		4C25A98A2D569756F8EE28648AC5CAC7 /* Pods-ExporterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExporterTests.release.xcconfig"; sourceTree = "<group>"; };
-		52DF92D2E8BE4B8D5D0889D98A195754 /* libxlsxwriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = libxlsxwriter.modulemap; sourceTree = "<group>"; };
-		56A1D87E7A828B8D70F3D6E0E9A0466A /* chart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chart.h; path = include/xlsxwriter/chart.h; sourceTree = "<group>"; };
-		5B9126AF879C73C8FA110D2EF9E8ABDE /* relationships.c */ = {isa = PBXFileReference; includeInIndex = 1; name = relationships.c; path = src/relationships.c; sourceTree = "<group>"; };
-		5BEF31FC8A5E1F542794B77B81074CF4 /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = include/xlsxwriter/third_party/queue.h; sourceTree = "<group>"; };
+		4DCDA66EC931F07FD4249CD8AEDADF30 /* core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core.h; path = include/xlsxwriter/core.h; sourceTree = "<group>"; };
+		4FE0533BDFF1E062F3BEE3554BAA94E7 /* FMDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FMDB.modulemap; sourceTree = "<group>"; };
+		51E2E70FD68E46F0021694AC0733800B /* shared_strings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shared_strings.h; path = include/xlsxwriter/shared_strings.h; sourceTree = "<group>"; };
+		524FA4B8BCAFE100C585CB76F8DAE284 /* FMDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-prefix.pch"; sourceTree = "<group>"; };
+		5577452D2C344AC30AF334205D5E8CB2 /* FMDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		5E6555E73CC71167E6D6CD4236E30093 /* Pods-Exporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Exporter.modulemap"; sourceTree = "<group>"; };
+		626669BD82A5D572E491450FBCF73BF8 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = include/xlsxwriter/third_party/zip.h; sourceTree = "<group>"; };
+		66879F6D0FA84EA97519CF6EC28D981B /* libxlsxwriter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "libxlsxwriter-Info.plist"; sourceTree = "<group>"; };
 		6ACA5AA45B4498E734CC2069ADBB5E41 /* Pods-ExporterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExporterTests-umbrella.h"; sourceTree = "<group>"; };
-		6EAE3CED294EC1B3102BD0C7038BC569 /* packager.c */ = {isa = PBXFileReference; includeInIndex = 1; name = packager.c; path = src/packager.c; sourceTree = "<group>"; };
-		7267674208F9C984DA74F46F454B4534 /* styles.c */ = {isa = PBXFileReference; includeInIndex = 1; name = styles.c; path = src/styles.c; sourceTree = "<group>"; };
+		6B99F62A1C27E554CEDD749D5F19F990 /* FMDatabasePool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
+		6CF02878B804951CE2496A095C029F93 /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = include/xlsxwriter/third_party/queue.h; sourceTree = "<group>"; };
+		74A87FF059D5F36419E5EE95B56A9921 /* content_types.c */ = {isa = PBXFileReference; includeInIndex = 1; name = content_types.c; path = src/content_types.c; sourceTree = "<group>"; };
 		775CFBD8F0C9A97508D846E92B1DF0CD /* Pods_Exporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Exporter.framework; path = "Pods-Exporter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77AC5D0FF9C0B8B75DA7E3DCDEC50EA6 /* libxlsxwriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libxlsxwriter-prefix.pch"; sourceTree = "<group>"; };
+		78CF472A187495863039587A7A352E36 /* packager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = packager.h; path = include/xlsxwriter/packager.h; sourceTree = "<group>"; };
 		7B8C4B2C67CC171E68E594053E588273 /* Pods_ExporterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ExporterTests.framework; path = "Pods-ExporterTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E31A68DBF7D8BA862FE741F5BB63044 /* xmlwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = include/xlsxwriter/xmlwriter.h; sourceTree = "<group>"; };
-		7EC1A2C0E922BB6603694BB9BBF7268D /* libxlsxwriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libxlsxwriter-dummy.m"; sourceTree = "<group>"; };
+		7F0BEE465B014479A45038255E40CED1 /* custom.c */ = {isa = PBXFileReference; includeInIndex = 1; name = custom.c; path = src/custom.c; sourceTree = "<group>"; };
+		8312ACC3D3FF081F24950D6DAF6CD9B5 /* libxlsxwriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libxlsxwriter-dummy.m"; sourceTree = "<group>"; };
+		8599B5B123DBD1AA8E6B4DC9C0649BDC /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = include/xlsxwriter/format.h; sourceTree = "<group>"; };
+		862869D77DC55F3CDEA75F07ED6414CC /* shared_strings.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shared_strings.c; path = src/shared_strings.c; sourceTree = "<group>"; };
 		877FD1017E19DD16BBEE4AAD647AD7CB /* Pods-Exporter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Exporter-dummy.m"; sourceTree = "<group>"; };
-		8935AD766A9CD07C1ABF4FE1416389FE /* drawing.c */ = {isa = PBXFileReference; includeInIndex = 1; name = drawing.c; path = src/drawing.c; sourceTree = "<group>"; };
-		8B0B59BFB3A67FA894D94A3221C38C1B /* shared_strings.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shared_strings.c; path = src/shared_strings.c; sourceTree = "<group>"; };
+		8859F7B233BB22563010CE7B3ACCCF55 /* xmlwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = include/xlsxwriter/xmlwriter.h; sourceTree = "<group>"; };
+		8D12AE3C22FECAE962F23DBB80E8A2C8 /* chart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chart.h; path = include/xlsxwriter/chart.h; sourceTree = "<group>"; };
 		8D7C19924EAE3C61D36DB569580CEF29 /* Pods-ExporterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExporterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8DBEBA33C3475CD2BAC5AFDC687E246F /* tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tree.h; path = include/xlsxwriter/third_party/tree.h; sourceTree = "<group>"; };
+		8DC9D7C010652B791E6FFC8A87BBD02A /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		8DDB1735EC11AF227EA979CA8415E315 /* xlsxwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlsxwriter.h; path = include/xlsxwriter.h; sourceTree = "<group>"; };
 		8DFE5C0A51AC9BF01FD8BF2CBB6AE5A6 /* Pods-ExporterTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExporterTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		901FCDD724BA40F45CBDE7CDE063882E /* content_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = content_types.h; path = include/xlsxwriter/content_types.h; sourceTree = "<group>"; };
-		9028789A0CD7FEF233E7B3BBB1851BC4 /* content_types.c */ = {isa = PBXFileReference; includeInIndex = 1; name = content_types.c; path = src/content_types.c; sourceTree = "<group>"; };
-		99A0F46B821615519E91E2BC7C2BC855 /* tmpfileplus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tmpfileplus.h; path = include/xlsxwriter/third_party/tmpfileplus.h; sourceTree = "<group>"; };
-		99C085AD415F5E871B5CFDFE32356828 /* theme.c */ = {isa = PBXFileReference; includeInIndex = 1; name = theme.c; path = src/theme.c; sourceTree = "<group>"; };
+		9118A65DDAF387316B73207B3CF9B2F6 /* hash_table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hash_table.c; path = src/hash_table.c; sourceTree = "<group>"; };
+		96EDA2E6BBECC5DC814322FA7B6B5DCA /* chart.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chart.c; path = src/chart.c; sourceTree = "<group>"; };
+		98E6F9BA27CAF8CD90B8692A9885D0AD /* FMResultSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
+		9A66A4AEBF6CA37B1F675EEFA11D4302 /* relationships.c */ = {isa = PBXFileReference; includeInIndex = 1; name = relationships.c; path = src/relationships.c; sourceTree = "<group>"; };
 		9A7BB9493DB649F27F951E3A5D1EB33E /* Pods-Exporter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Exporter-acknowledgements.plist"; sourceTree = "<group>"; };
-		9AA4D20A76BB9A42E7D6B9D85C3D8E44 /* hash_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash_table.h; path = include/xlsxwriter/hash_table.h; sourceTree = "<group>"; };
 		9C55667E21E9469A6A885C0E31EA4B7D /* xlsxwriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = xlsxwriter.framework; path = libxlsxwriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EFBAE032575E2535D8D94A4FF3017DE /* utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utility.h; path = include/xlsxwriter/utility.h; sourceTree = "<group>"; };
-		A0C176010B4E1D37B0F5F7A706AD3DD8 /* libxlsxwriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libxlsxwriter-umbrella.h"; path = "include/xlsxwriter/libxlsxwriter-umbrella.h"; sourceTree = "<group>"; };
-		A1EAF30FCCC184E943B7338D1001082D /* hash_table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hash_table.c; path = src/hash_table.c; sourceTree = "<group>"; };
+		A2E7660CEA1798587DF60F56D2D15518 /* libxlsxwriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libxlsxwriter-prefix.pch"; sourceTree = "<group>"; };
+		A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FMDB.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44937119E316123B4E398BD6AFFEF16 /* FMDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
+		A5796672D0D6536B647F31F548FC1B3C /* tmpfileplus.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tmpfileplus.c; path = third_party/tmpfileplus/tmpfileplus.c; sourceTree = "<group>"; };
+		A65A88D092DC92881208EAA68254D3E4 /* FMDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FMDB-Info.plist"; sourceTree = "<group>"; };
+		A6E997BF3ADBADD4F1AF7F0A2B2607BF /* drawing.c */ = {isa = PBXFileReference; includeInIndex = 1; name = drawing.c; path = src/drawing.c; sourceTree = "<group>"; };
 		AE1CDA7C196BE6E81A5898C723E60AF6 /* Pods-Exporter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Exporter-umbrella.h"; sourceTree = "<group>"; };
-		BB9876295CEB7C5A38AA77CF09EB6A5E /* utility.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.c; path = src/utility.c; sourceTree = "<group>"; };
-		BD93F904EDEB8396C2D0009A74EB1ECF /* libxlsxwriter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libxlsxwriter.xcconfig; sourceTree = "<group>"; };
+		BD4FB172B8D94E5379167F31C99A8231 /* worksheet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = worksheet.c; path = src/worksheet.c; sourceTree = "<group>"; };
 		C40DAC9B3A832F729DD2A39F558DB6E8 /* Pods-Exporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Exporter.debug.xcconfig"; sourceTree = "<group>"; };
-		C5C958E7F9AEB65B1B83EB25F4927B13 /* custom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = custom.h; path = include/xlsxwriter/custom.h; sourceTree = "<group>"; };
-		C63B6981C8FD8BEE9969EC41D441B940 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = include/xlsxwriter/third_party/ioapi.h; sourceTree = "<group>"; };
 		C80800A921930D7965360A64B6684418 /* Pods-ExporterTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExporterTests-Info.plist"; sourceTree = "<group>"; };
-		CD525EF5186664D4F0348E4BDE702680 /* worksheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = worksheet.h; path = include/xlsxwriter/worksheet.h; sourceTree = "<group>"; };
-		D1D7E1404A2C513A3DCC18298E2CCFE6 /* relationships.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relationships.h; path = include/xlsxwriter/relationships.h; sourceTree = "<group>"; };
-		D464AE49F0662A06F7431D60C042B379 /* xmlwriter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
-		DF972F8E8B7611FFB639D0425BC7B804 /* app.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = app.h; path = include/xlsxwriter/app.h; sourceTree = "<group>"; };
+		CD0D372C1F008133D0E16DEDBDFBBB32 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = include/xlsxwriter/common.h; sourceTree = "<group>"; };
+		CD7838160C8BF599C57F90F7518F9E9E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		D4E5FC97E61AEB4C6E73D1D55E3CFFFF /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = third_party/minizip/zip.c; sourceTree = "<group>"; };
+		D56029D95632A45987AA8F9375191CF2 /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		DEDED44BE8EE0159D070897A0A46B369 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = third_party/minizip/ioapi.c; sourceTree = "<group>"; };
+		E1361AFAAB8A455CA798970B88E83B18 /* app.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = app.h; path = include/xlsxwriter/app.h; sourceTree = "<group>"; };
+		E28AA8E63EF3ED7136D1E4A010A58A89 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = include/xlsxwriter/third_party/ioapi.h; sourceTree = "<group>"; };
+		E3D9AD6DD38330E10871B02AE1870CE7 /* FMDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FMDB.xcconfig; sourceTree = "<group>"; };
 		E7107EDB862336C1DD467A6D1048B96D /* Pods-ExporterTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExporterTests.modulemap"; sourceTree = "<group>"; };
-		EAE70031ECA9C68ED25B870A45558974 /* format.c */ = {isa = PBXFileReference; includeInIndex = 1; name = format.c; path = src/format.c; sourceTree = "<group>"; };
-		EB78A83419242E201AD1B6C4C57CDD9A /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = third_party/minizip/ioapi.c; sourceTree = "<group>"; };
-		EF8C33E21D573D64E097C4BDA4F4B0E9 /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = include/xlsxwriter/format.h; sourceTree = "<group>"; };
+		E86178C7317E889310EA0D61E53EEFF8 /* packager.c */ = {isa = PBXFileReference; includeInIndex = 1; name = packager.c; path = src/packager.c; sourceTree = "<group>"; };
+		EBC35DF188EAD002E6AC84CBC4968DFB /* content_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = content_types.h; path = include/xlsxwriter/content_types.h; sourceTree = "<group>"; };
+		EE4632E85FD58E15C2CB138B07F9A4C9 /* styles.c */ = {isa = PBXFileReference; includeInIndex = 1; name = styles.c; path = src/styles.c; sourceTree = "<group>"; };
 		F16B95520D2273DF198E1445CE2E3B07 /* Pods-ExporterTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExporterTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F4CD8CA33CAD4DD69A6DC4380D84A7E3 /* workbook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = workbook.c; path = src/workbook.c; sourceTree = "<group>"; };
+		F7EBD0ED4125DEBDE0E3558D9C4342C7 /* utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utility.h; path = include/xlsxwriter/utility.h; sourceTree = "<group>"; };
 		F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		F9A2AC1D65116C0D57748A02FEDD0902 /* tmpfileplus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tmpfileplus.h; path = include/xlsxwriter/third_party/tmpfileplus.h; sourceTree = "<group>"; };
 		FA5B03C95127882DB0AC53A1D57011EF /* Pods-ExporterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExporterTests-dummy.m"; sourceTree = "<group>"; };
+		FB5002C6C0C6C0A4BEEB801DE934DB2F /* libxlsxwriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = libxlsxwriter.modulemap; sourceTree = "<group>"; };
+		FE841C9E4C96973F8BA2E35CFFE18290 /* FMDatabasePool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
+		FF1456013C72D73EDC0ED262155D84C0 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03C027A4C2527FB09E577645FE494BDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA677E11836C331B21D8FCBB39CD22E6 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0A09CFBFB384BF3300D2370A99B863DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4C94A2D0F9312DC642E7C8B1B3901D03 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E37AE4A5301D73EDF2FCAE3ED363F40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46704C7E84BD304F53BE153EA586AAD0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA2A276DD84A36AC7617E4A0A874AC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A87391479E232433382651FFD900B6 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,25 +312,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2199FF7508B195FB863A3504FE0FCE90 /* Pods */ = {
+		0E19D2EC68767F16BA2445D2607439E8 /* libxlsxwriter */ = {
 			isa = PBXGroup;
 			children = (
-				F4B4C0C5F373AA8EA1FFA5CA22C9803C /* libxlsxwriter */,
+				20978FC36B4E263A65C69CC0662CF9C4 /* app.c */,
+				E1361AFAAB8A455CA798970B88E83B18 /* app.h */,
+				96EDA2E6BBECC5DC814322FA7B6B5DCA /* chart.c */,
+				8D12AE3C22FECAE962F23DBB80E8A2C8 /* chart.h */,
+				CD0D372C1F008133D0E16DEDBDFBBB32 /* common.h */,
+				74A87FF059D5F36419E5EE95B56A9921 /* content_types.c */,
+				EBC35DF188EAD002E6AC84CBC4968DFB /* content_types.h */,
+				1371ECDC807334D355EB9D23E81E489F /* core.c */,
+				4DCDA66EC931F07FD4249CD8AEDADF30 /* core.h */,
+				7F0BEE465B014479A45038255E40CED1 /* custom.c */,
+				2F777DF06A929209D753E4C27B9A7BAC /* custom.h */,
+				A6E997BF3ADBADD4F1AF7F0A2B2607BF /* drawing.c */,
+				423EBF0FCCD8008CB76DB17C32528CB0 /* drawing.h */,
+				3AEFC03FA4834E267221AE8FFDC103E3 /* format.c */,
+				8599B5B123DBD1AA8E6B4DC9C0649BDC /* format.h */,
+				9118A65DDAF387316B73207B3CF9B2F6 /* hash_table.c */,
+				43D46E90DCCCC3366ABAE9536997F61B /* hash_table.h */,
+				DEDED44BE8EE0159D070897A0A46B369 /* ioapi.c */,
+				E28AA8E63EF3ED7136D1E4A010A58A89 /* ioapi.h */,
+				0A77670C13D032A28E721D7002FCB025 /* libxlsxwriter-umbrella.h */,
+				E86178C7317E889310EA0D61E53EEFF8 /* packager.c */,
+				78CF472A187495863039587A7A352E36 /* packager.h */,
+				6CF02878B804951CE2496A095C029F93 /* queue.h */,
+				9A66A4AEBF6CA37B1F675EEFA11D4302 /* relationships.c */,
+				2E4A52E0D23F1C949EA7DD5CB5546B1F /* relationships.h */,
+				862869D77DC55F3CDEA75F07ED6414CC /* shared_strings.c */,
+				51E2E70FD68E46F0021694AC0733800B /* shared_strings.h */,
+				EE4632E85FD58E15C2CB138B07F9A4C9 /* styles.c */,
+				2898AAE3DAA6F833364ECCAA94864CC5 /* styles.h */,
+				44F5A4439EF35A3E9A047EBC21C0CA65 /* theme.c */,
+				1E3EF83606605A695FC2870FDFEA8B1C /* theme.h */,
+				A5796672D0D6536B647F31F548FC1B3C /* tmpfileplus.c */,
+				F9A2AC1D65116C0D57748A02FEDD0902 /* tmpfileplus.h */,
+				140FE2F49D6CBC35888DFAE44F0B0193 /* tree.h */,
+				21AE764C39E92648A0446D304F1AFB36 /* utility.c */,
+				F7EBD0ED4125DEBDE0E3558D9C4342C7 /* utility.h */,
+				03B6692ADC473A1362F5ED9C3AB08E14 /* workbook.c */,
+				012B83096817CA5BF4FEE2C417484737 /* workbook.h */,
+				BD4FB172B8D94E5379167F31C99A8231 /* worksheet.c */,
+				4A9EB6725343A306D1C5856A126873A0 /* worksheet.h */,
+				8DDB1735EC11AF227EA979CA8415E315 /* xlsxwriter.h */,
+				3938A078BE93736AC2747F56F154463A /* xmlwriter.c */,
+				8859F7B233BB22563010CE7B3ACCCF55 /* xmlwriter.h */,
+				D4E5FC97E61AEB4C6E73D1D55E3CFFFF /* zip.c */,
+				626669BD82A5D572E491450FBCF73BF8 /* zip.h */,
+				878E87B4D4317FED39832B8132330C64 /* Support Files */,
 			);
-			name = Pods;
+			name = libxlsxwriter;
+			path = libxlsxwriter;
 			sourceTree = "<group>";
 		};
-		3596E0FA96210ADD9E39C193933C197E /* Support Files */ = {
+		206D0ED4A49F352BB7EF6E7A998DAAAE /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				52DF92D2E8BE4B8D5D0889D98A195754 /* libxlsxwriter.modulemap */,
-				BD93F904EDEB8396C2D0009A74EB1ECF /* libxlsxwriter.xcconfig */,
-				7EC1A2C0E922BB6603694BB9BBF7268D /* libxlsxwriter-dummy.m */,
-				0DE9D81E76781A804E9AD5796906F4C7 /* libxlsxwriter-Info.plist */,
-				77AC5D0FF9C0B8B75DA7E3DCDEC50EA6 /* libxlsxwriter-prefix.pch */,
+				86F4AD835D308564965B068552043F5F /* standard */,
+				E9C00EFAA56EFB3F85320619A780AC38 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/libxlsxwriter";
+			name = FMDB;
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 		3A9FC3E7FB98C2AD885433046CD20646 /* Pods-Exporter */ = {
@@ -303,16 +393,6 @@
 			path = "Target Support Files/Pods-Exporter";
 			sourceTree = "<group>";
 		};
-		6F10339CC54D532EDE2173BDF7CE243F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				775CFBD8F0C9A97508D846E92B1DF0CD /* Pods_Exporter.framework */,
-				7B8C4B2C67CC171E68E594053E588273 /* Pods_ExporterTests.framework */,
-				9C55667E21E9469A6A885C0E31EA4B7D /* xlsxwriter.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		725A7EE000214D29B812D918F6F70919 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +400,48 @@
 				E4921A2C223E5B43D914A91AF189ECAF /* Pods-ExporterTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		86F4AD835D308564965B068552043F5F /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				A44937119E316123B4E398BD6AFFEF16 /* FMDatabase.h */,
+				5577452D2C344AC30AF334205D5E8CB2 /* FMDatabase.m */,
+				FF1456013C72D73EDC0ED262155D84C0 /* FMDatabaseAdditions.h */,
+				8DC9D7C010652B791E6FFC8A87BBD02A /* FMDatabaseAdditions.m */,
+				FE841C9E4C96973F8BA2E35CFFE18290 /* FMDatabasePool.h */,
+				6B99F62A1C27E554CEDD749D5F19F990 /* FMDatabasePool.m */,
+				CD7838160C8BF599C57F90F7518F9E9E /* FMDatabaseQueue.h */,
+				2514C38FD2D161138839752AEB337604 /* FMDatabaseQueue.m */,
+				39520A5F358CD66A2921A2212B00635B /* FMDB.h */,
+				185A9E0A30BF44FFE17882022EB73EC1 /* FMResultSet.h */,
+				98E6F9BA27CAF8CD90B8692A9885D0AD /* FMResultSet.m */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		878E87B4D4317FED39832B8132330C64 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB5002C6C0C6C0A4BEEB801DE934DB2F /* libxlsxwriter.modulemap */,
+				0D36EAF02F52D85D3AE9AE49558A60C7 /* libxlsxwriter.xcconfig */,
+				8312ACC3D3FF081F24950D6DAF6CD9B5 /* libxlsxwriter-dummy.m */,
+				66879F6D0FA84EA97519CF6EC28D981B /* libxlsxwriter-Info.plist */,
+				A2E7660CEA1798587DF60F56D2D15518 /* libxlsxwriter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/libxlsxwriter";
+			sourceTree = "<group>";
+		};
+		CB5D2FE2A84B6E404B76428FAA4ABE04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */,
+				775CFBD8F0C9A97508D846E92B1DF0CD /* Pods_Exporter.framework */,
+				7B8C4B2C67CC171E68E594053E588273 /* Pods_ExporterTests.framework */,
+				9C55667E21E9469A6A885C0E31EA4B7D /* xlsxwriter.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CBD43E0947D94E318A0ED1350CFF29ED /* OS X */ = {
@@ -335,8 +457,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
-				2199FF7508B195FB863A3504FE0FCE90 /* Pods */,
-				6F10339CC54D532EDE2173BDF7CE243F /* Products */,
+				F1DE638CA43AC7B3B55C33C1B93F599A /* Pods */,
+				CB5D2FE2A84B6E404B76428FAA4ABE04 /* Products */,
 				725A7EE000214D29B812D918F6F70919 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -365,63 +487,40 @@
 			path = "Target Support Files/Pods-ExporterTests";
 			sourceTree = "<group>";
 		};
-		F4B4C0C5F373AA8EA1FFA5CA22C9803C /* libxlsxwriter */ = {
+		E9C00EFAA56EFB3F85320619A780AC38 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3206154256E7390C79A092E53D5BB18A /* app.c */,
-				DF972F8E8B7611FFB639D0425BC7B804 /* app.h */,
-				3C270544AC1B1ED2101975192A6F2798 /* chart.c */,
-				56A1D87E7A828B8D70F3D6E0E9A0466A /* chart.h */,
-				214D8DB3528363CA849D7030A826651C /* common.h */,
-				9028789A0CD7FEF233E7B3BBB1851BC4 /* content_types.c */,
-				901FCDD724BA40F45CBDE7CDE063882E /* content_types.h */,
-				42E3BD7801114CB51092B92231B6AA92 /* core.c */,
-				292134466199461928868EBEC6FEDE6C /* core.h */,
-				11654CCEE940C0E135145D84C0F44F2D /* custom.c */,
-				C5C958E7F9AEB65B1B83EB25F4927B13 /* custom.h */,
-				8935AD766A9CD07C1ABF4FE1416389FE /* drawing.c */,
-				38632B15CF6A7C2A094E2F7653CCC685 /* drawing.h */,
-				EAE70031ECA9C68ED25B870A45558974 /* format.c */,
-				EF8C33E21D573D64E097C4BDA4F4B0E9 /* format.h */,
-				A1EAF30FCCC184E943B7338D1001082D /* hash_table.c */,
-				9AA4D20A76BB9A42E7D6B9D85C3D8E44 /* hash_table.h */,
-				EB78A83419242E201AD1B6C4C57CDD9A /* ioapi.c */,
-				C63B6981C8FD8BEE9969EC41D441B940 /* ioapi.h */,
-				A0C176010B4E1D37B0F5F7A706AD3DD8 /* libxlsxwriter-umbrella.h */,
-				6EAE3CED294EC1B3102BD0C7038BC569 /* packager.c */,
-				383E7FA6994FDD0F74AB412D25C602DC /* packager.h */,
-				5BEF31FC8A5E1F542794B77B81074CF4 /* queue.h */,
-				5B9126AF879C73C8FA110D2EF9E8ABDE /* relationships.c */,
-				D1D7E1404A2C513A3DCC18298E2CCFE6 /* relationships.h */,
-				8B0B59BFB3A67FA894D94A3221C38C1B /* shared_strings.c */,
-				47DAFBA3DBBBD92806EA5BB82BE60204 /* shared_strings.h */,
-				7267674208F9C984DA74F46F454B4534 /* styles.c */,
-				1161C42382F2AFD0989AE73352E46ED2 /* styles.h */,
-				99C085AD415F5E871B5CFDFE32356828 /* theme.c */,
-				3904CF61D097DDBD90C4B9C3EF51E7B5 /* theme.h */,
-				3018A5C901CDF8528C5A2FC08279E0EF /* tmpfileplus.c */,
-				99A0F46B821615519E91E2BC7C2BC855 /* tmpfileplus.h */,
-				8DBEBA33C3475CD2BAC5AFDC687E246F /* tree.h */,
-				BB9876295CEB7C5A38AA77CF09EB6A5E /* utility.c */,
-				9EFBAE032575E2535D8D94A4FF3017DE /* utility.h */,
-				F4CD8CA33CAD4DD69A6DC4380D84A7E3 /* workbook.c */,
-				36760BCD727769AA69580557F15D43D8 /* workbook.h */,
-				2132A9B6BDB3FC39C3C928314E84082C /* worksheet.c */,
-				CD525EF5186664D4F0348E4BDE702680 /* worksheet.h */,
-				0BA2018C8F587001C93E7FD6D8AF01E8 /* xlsxwriter.h */,
-				D464AE49F0662A06F7431D60C042B379 /* xmlwriter.c */,
-				7E31A68DBF7D8BA862FE741F5BB63044 /* xmlwriter.h */,
-				136AE8EC0A1A67346B0987B76020272A /* zip.c */,
-				2DD483EACE435277884794CE116EB787 /* zip.h */,
-				3596E0FA96210ADD9E39C193933C197E /* Support Files */,
+				4FE0533BDFF1E062F3BEE3554BAA94E7 /* FMDB.modulemap */,
+				E3D9AD6DD38330E10871B02AE1870CE7 /* FMDB.xcconfig */,
+				0F8CB397F130FCD3F393187F78350E22 /* FMDB-dummy.m */,
+				A65A88D092DC92881208EAA68254D3E4 /* FMDB-Info.plist */,
+				524FA4B8BCAFE100C585CB76F8DAE284 /* FMDB-prefix.pch */,
+				D56029D95632A45987AA8F9375191CF2 /* FMDB-umbrella.h */,
 			);
-			name = libxlsxwriter;
-			path = libxlsxwriter;
+			name = "Support Files";
+			path = "../Target Support Files/FMDB";
+			sourceTree = "<group>";
+		};
+		F1DE638CA43AC7B3B55C33C1B93F599A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				206D0ED4A49F352BB7EF6E7A998DAAAE /* FMDB */,
+				0E19D2EC68767F16BA2445D2607439E8 /* libxlsxwriter */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BBDD255B7C3DF0C6B6C99E23F1D93617 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA895A1B2AFD36818087D67F31D8EA5 /* Pods-Exporter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA6F967CC93D6399C4B92DE3214B0952 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,11 +553,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAA661D26D6B72AFF008FFE974932B32 /* Headers */ = {
+		DCCC73753CB120F68D482DBCD2F11BB6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FE13DEDA98A154934FFCA0A47C9B68 /* Pods-Exporter-umbrella.h in Headers */,
+				37296B38A55A40BEF65ECFC9B0527D8E /* FMDatabase.h in Headers */,
+				538F74CC22D0D13E9D79AC3ECC6DFFE7 /* FMDatabaseAdditions.h in Headers */,
+				0F72AA9F03EC61C6D857941E0B45811A /* FMDatabasePool.h in Headers */,
+				7394E123FBD9832A5D6FD726D5D9470C /* FMDatabaseQueue.h in Headers */,
+				219BADA8C55CF72273F5A734AA0E0EF6 /* FMDB-umbrella.h in Headers */,
+				A92CDCFE2DC0D002DE1F208C2FEAB545 /* FMDB.h in Headers */,
+				BB7ECF4DBE8D4BB38E6F2F08C326922A /* FMResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,19 +619,38 @@
 			productReference = 9C55667E21E9469A6A885C0E31EA4B7D /* xlsxwriter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F885C09FE74A112D01F68576DEF32261 /* Pods-Exporter */ = {
+		8592E0E389D40AC17881400ADC67ABC0 /* FMDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09FA7C70AA829437CE70868F7B81423C /* Build configuration list for PBXNativeTarget "Pods-Exporter" */;
+			buildConfigurationList = EE1CF8B84020151C94CD4280C9C11ED5 /* Build configuration list for PBXNativeTarget "FMDB" */;
 			buildPhases = (
-				DAA661D26D6B72AFF008FFE974932B32 /* Headers */,
-				8D5976BCAEFFD1C7D55E42DC3789B043 /* Sources */,
-				03C027A4C2527FB09E577645FE494BDF /* Frameworks */,
-				19E14B1AE362E6722988E0298BB1C306 /* Resources */,
+				DCCC73753CB120F68D482DBCD2F11BB6 /* Headers */,
+				7E0D56167C29831E3033100E4A70F3B9 /* Sources */,
+				0E37AE4A5301D73EDF2FCAE3ED363F40 /* Frameworks */,
+				2B6B314F2508F3A29CC15F9D75CB5E33 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0C39D9337A3B85930984CBD21348B019 /* PBXTargetDependency */,
+			);
+			name = FMDB;
+			productName = FMDB;
+			productReference = A3A80BA70CFB7F75C5391BEBBBA8C9DA /* FMDB.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F885C09FE74A112D01F68576DEF32261 /* Pods-Exporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276C7884DB0C1F5B22491A0D36D4187E /* Build configuration list for PBXNativeTarget "Pods-Exporter" */;
+			buildPhases = (
+				BBDD255B7C3DF0C6B6C99E23F1D93617 /* Headers */,
+				CD2D6AADF33B9498FAEF9C5DCA65EDEA /* Sources */,
+				DA2A276DD84A36AC7617E4A0A874AC49 /* Frameworks */,
+				88E482F7608979D1B78D273832103307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A41DEDE7B99B3A24600E0C18837D3B /* PBXTargetDependency */,
+				F845F301C17414A4BE4528B353EA8672 /* PBXTargetDependency */,
 			);
 			name = "Pods-Exporter";
 			productName = "Pods-Exporter";
@@ -551,10 +675,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6F10339CC54D532EDE2173BDF7CE243F /* Products */;
+			productRefGroup = CB5D2FE2A84B6E404B76428FAA4ABE04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				8592E0E389D40AC17881400ADC67ABC0 /* FMDB */,
 				7A534299236C2C3C0C940497BB968D49 /* libxlsxwriter */,
 				F885C09FE74A112D01F68576DEF32261 /* Pods-Exporter */,
 				450191F54722447AE90ED6793286609E /* Pods-ExporterTests */,
@@ -563,7 +688,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		19E14B1AE362E6722988E0298BB1C306 /* Resources */ = {
+		2B6B314F2508F3A29CC15F9D75CB5E33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -578,6 +703,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		61D868E91608F3DF379D0F2529396035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E482F7608979D1B78D273832103307 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -608,11 +740,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8D5976BCAEFFD1C7D55E42DC3789B043 /* Sources */ = {
+		7E0D56167C29831E3033100E4A70F3B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D492C2A1F5A09B428EE985AB0033BC8F /* Pods-Exporter-dummy.m in Sources */,
+				6C58288FB8A294C16676BF03E51AA34D /* FMDatabase.m in Sources */,
+				0C93E589E31C5CBCA37586544BEC1005 /* FMDatabaseAdditions.m in Sources */,
+				0370787809FDCBCB15C2D4DD22190732 /* FMDatabasePool.m in Sources */,
+				0CA022FE5CC3F8A1ECC6699F10BF81EE /* FMDatabaseQueue.m in Sources */,
+				7D4E0D91FE60904C9FB50F6D447B8A30 /* FMDB-dummy.m in Sources */,
+				FDD8729FB9BBE45B90107CA26BE5804B /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,20 +789,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD2D6AADF33B9498FAEF9C5DCA65EDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F1A85B54BBD4CAE5B7E83F811B3DC4 /* Pods-Exporter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C39D9337A3B85930984CBD21348B019 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = libxlsxwriter;
-			target = 7A534299236C2C3C0C940497BB968D49 /* libxlsxwriter */;
-			targetProxy = 7FD1EDE9DF8C96CEF609DBDAFCD72628 /* PBXContainerItemProxy */;
-		};
 		97D14A6551B1902CBAB88C89E0173501 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Exporter";
 			target = F885C09FE74A112D01F68576DEF32261 /* Pods-Exporter */;
 			targetProxy = 2E1ED0F30BEA68A519C98AC858DFACCF /* PBXContainerItemProxy */;
+		};
+		F2A41DEDE7B99B3A24600E0C18837D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = 59BD79D858B9DF658ABB74DFB06A1C86 /* PBXContainerItemProxy */;
+		};
+		F845F301C17414A4BE4528B353EA8672 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libxlsxwriter;
+			target = 7A534299236C2C3C0C940497BB968D49 /* libxlsxwriter */;
+			targetProxy = 1E87E24E9369FB1327147B55FB40FC80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -810,6 +961,44 @@
 			};
 			name = Debug;
 		};
+		6ACD2997D8B1DC2EE8C6D43472C74110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D9AD6DD38330E10871B02AE1870CE7 /* FMDB.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6DC6BBF7D2A721A4E91A75A28EEB8E83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -874,49 +1063,9 @@
 			};
 			name = Debug;
 		};
-		A25C99DD435A2096DDD36E95F8FFB703 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2199701F989E0729C701FE55FA21B625 /* Pods-Exporter.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-Exporter/Pods-Exporter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MODULEMAP_FILE = "Target Support Files/Pods-Exporter/Pods-Exporter.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		AE250AE99F8AA098346B9A20DF32B2D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD93F904EDEB8396C2D0009A74EB1ECF /* libxlsxwriter.xcconfig */;
+			baseConfigurationReference = 0D36EAF02F52D85D3AE9AE49558A60C7 /* libxlsxwriter.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -951,7 +1100,7 @@
 			};
 			name = Release;
 		};
-		B6F53128A7D575325EA322ECE1AE229E /* Debug */ = {
+		AE75AB20C25BA8E8DB285DFEBA6FEB59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C40DAC9B3A832F729DD2A39F558DB6E8 /* Pods-Exporter.debug.xcconfig */;
 			buildSettings = {
@@ -993,7 +1142,7 @@
 		};
 		D5406B525CBACAB53D6256531C50C3FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD93F904EDEB8396C2D0009A74EB1ECF /* libxlsxwriter.xcconfig */;
+			baseConfigurationReference = 0D36EAF02F52D85D3AE9AE49558A60C7 /* libxlsxwriter.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
@@ -1028,14 +1177,92 @@
 			};
 			name = Debug;
 		};
+		E6040FD1173A84D5A98128CBB36BED26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2199701F989E0729C701FE55FA21B625 /* Pods-Exporter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Exporter/Pods-Exporter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/Pods-Exporter/Pods-Exporter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1F786F59E2FF7D7A72FEC7E9A8F47A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D9AD6DD38330E10871B02AE1870CE7 /* FMDB.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FMDB/FMDB-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FMDB/FMDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/FMDB/FMDB.modulemap";
+				PRODUCT_MODULE_NAME = FMDB;
+				PRODUCT_NAME = FMDB;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09FA7C70AA829437CE70868F7B81423C /* Build configuration list for PBXNativeTarget "Pods-Exporter" */ = {
+		276C7884DB0C1F5B22491A0D36D4187E /* Build configuration list for PBXNativeTarget "Pods-Exporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6F53128A7D575325EA322ECE1AE229E /* Debug */,
-				A25C99DD435A2096DDD36E95F8FFB703 /* Release */,
+				AE75AB20C25BA8E8DB285DFEBA6FEB59 /* Debug */,
+				E6040FD1173A84D5A98128CBB36BED26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1063,6 +1290,15 @@
 			buildConfigurations = (
 				D5406B525CBACAB53D6256531C50C3FD /* Debug */,
 				AE250AE99F8AA098346B9A20DF32B2D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE1CF8B84020151C94CD4280C9C11ED5 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ACD2997D8B1DC2EE8C6D43472C74110 /* Debug */,
+				F1F786F59E2FF7D7A72FEC7E9A8F47A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

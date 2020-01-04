@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Exporter/Pods-Exporter-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
 ${BUILT_PRODUCTS_DIR}/libxlsxwriter/xlsxwriter.framework

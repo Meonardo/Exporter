@@ -1,16 +1,23 @@
 PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - libxlsxwriter (0.7.6)
 
 DEPENDENCIES:
+  - FMDB
   - libxlsxwriter
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - libxlsxwriter
+  trunk:
+    - FMDB
 
 SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   libxlsxwriter: 6db13593dc1f3a866c13ed011657efb03dbd1824
 
-PODFILE CHECKSUM: 2021db618719dd6ff232052d94681e8262df1f33
+PODFILE CHECKSUM: 60c0eb2638fd3857ee301e061a6ec1e8911357c1
 
 COCOAPODS: 1.8.4

@@ -8,31 +8,62 @@
 
 import SwiftUI
 
-struct MainView: View {
-    var body: some View {
-        VStack {
-			Text("你好, Big Head Wendy!")
-			.font(Font.system(size: 32, weight: .semibold, design: .rounded))
-			.fontWeight(.semibold)
-			.multilineTextAlignment(.leading)
-			.lineLimit(nil)
-			.padding([.top, .leading], 10.0)
-			
-			HStack {
-				Button("导出表格") {
-					
-				}
-				.font(Font.system(size: 12, weight: .semibold))
-				.frame(width: 120, height: 80, alignment: .center)
-				
-				Button("修改信息") {
-					
-				}.font(Font.system(size: 12, weight: .semibold))
-			}
-			
-		}
-		.frame(maxWidth: .infinity, maxHeight: .infinity)
+struct BlueButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .foregroundColor(configuration.isPressed ? Color.blue : Color.white)
+            .background(configuration.isPressed ? Color.white : Color.blue)
+            .cornerRadius(8.0)
+            .padding()
     }
+}
+
+struct MainView: View {
+	
+	var action: ((Bool) -> Void)?
+	
+    var body: some View {
+		VStack(spacing: 32) {
+			Text("Hello, Wendy!")
+			.font(Font.system(size: 40, weight: .semibold, design: .rounded))
+			.padding(.bottom, 32)
+			
+			HStack(spacing: 2) {
+				Button(action: {
+					self.showFormView()
+				}) {
+					Text("导出表格")
+						.padding(16)
+				}
+				.buttonStyle(BlueButtonStyle())
+				.font(Font.system(size: 14, weight: .semibold))
+				
+				Button(action: {
+					self.showModifyView()
+				}) {
+					Text("修改信息")
+						.padding(16)
+					}
+				.buttonStyle(BlueButtonStyle())
+				.font(Font.system(size: 14, weight: .semibold))
+				
+			}
+		}
+		.frame(minWidth: 500, idealWidth: 500, maxWidth: .infinity, minHeight: 320, idealHeight: 320, maxHeight: .infinity, alignment: .center)
+		.background(Color(.windowBackgroundColor))
+    }
+	
+	private func showFormView() {
+		action?(true)
+	}
+	
+	private func showModifyView() {
+		action?(false)
+	}
+	
+	init(action: ((Bool) -> Void)? = nil) {
+		self.action = action
+	}
 }
 
 struct MainView_Previews: PreviewProvider {

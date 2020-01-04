@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,7 @@
 		A009EF2323BE471200F6F675 /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009EF1C23BE471200F6F675 /* Buyer.swift */; };
 		A00EB0C223BF7CE600A12512 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00EB0C123BF7CE600A12512 /* MainView.swift */; };
 		A00EB0C423BF815600A12512 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00EB0C323BF815600A12512 /* ExportView.swift */; };
+		A0BC015B23C0C39F00014D3D /* WindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BC015A23C0C39F00014D3D /* WindowView.swift */; };
 		D937CDA4426052BC719126BF /* Pods_ExporterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A209B3D0F5D787095DF1F27F /* Pods_ExporterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		A009EF1C23BE471200F6F675 /* Buyer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buyer.swift; sourceTree = "<group>"; };
 		A00EB0C123BF7CE600A12512 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A00EB0C323BF815600A12512 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		A0BC015A23C0C39F00014D3D /* WindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowView.swift; sourceTree = "<group>"; };
 		A209B3D0F5D787095DF1F27F /* Pods_ExporterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExporterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA4F08915EF14E27E5812D /* Pods-ExporterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExporterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExporterTests/Pods-ExporterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D02F8DCFA1CE0848E0F87B61 /* Pods_Exporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				A009EF1323BE471200F6F675 /* Sheet */,
 				A009EEEF23BE458E00F6F675 /* AppDelegate.swift */,
 				A00EB0C123BF7CE600A12512 /* MainView.swift */,
+				A0BC015A23C0C39F00014D3D /* WindowView.swift */,
 				A00EB0C323BF815600A12512 /* ExportView.swift */,
 				A009EEF623BE458E00F6F675 /* Assets.xcassets */,
 				A009EEFB23BE458E00F6F675 /* Main.storyboard */,
@@ -351,6 +354,7 @@
 				A009EF2323BE471200F6F675 /* Buyer.swift in Sources */,
 				A009EF2123BE471200F6F675 /* Order.swift in Sources */,
 				A00EB0C423BF815600A12512 /* ExportView.swift in Sources */,
+				A0BC015B23C0C39F00014D3D /* WindowView.swift in Sources */,
 				A009EF1D23BE471200F6F675 /* Invoice.swift in Sources */,
 				A009EF2023BE471200F6F675 /* ProformaInvoice.swift in Sources */,
 				A00EB0C223BF7CE600A12512 /* MainView.swift in Sources */,

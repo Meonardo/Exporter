@@ -7,6 +7,7 @@ target 'Exporter' do
 
   # Pods for Exporter
   pod 'libxlsxwriter'
+  pod 'FMDB'
   
   target 'ExporterTests' do
     inherit! :search_paths
