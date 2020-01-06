@@ -12,7 +12,6 @@ struct TransparentButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-			.foregroundColor(.clear)
     }
 }
 
@@ -24,10 +23,13 @@ struct ExportView: View {
 	var backAction: (() -> Void)?
 	
 	private let viewWidth: CGFloat = 260
+	
     private var selectionItems: [SelectionViewModel] = [
         SelectionViewModel(title: "客\n户", isSelected: true),
         SelectionViewModel(title: "商\n品", selectedColor: .orange),
     ]
+	
+	@State private var listDataSource: [Buyer]?
     
     var body: some View {
 		HStack {
@@ -57,22 +59,52 @@ struct ExportView: View {
 				Spacer()
 			}.frame(width: viewWidth)
 			
-			VStack(alignment: .leading) {
-				Text(rightTitle)
-					.font(Font.system(size: 24, weight: .semibold))
-				List {
-					Text("公司信息")
-					Text("公司信息")
-					Text("公司信息")
+			ZStack {
+				VStack(alignment: .leading) {
+					HStack {
+						Text(rightTitle)
+							.font(Font.system(size: 24, weight: .semibold))
+						Spacer()
+						Button(action: {
+							self.addAction()
+						}) {
+							Text("+")
+								.font(Font.system(size: 24, weight: .semibold))
+						}
+						.buttonStyle(TransparentButtonStyle())
+					}
+					
+					BuyerView(buyers: [])
+					.padding(.top, 16)
+					.cornerRadius(10)
 				}
-				.cornerRadius(10)
+				.frame(minWidth: viewWidth + 100, minHeight: 400)
+				.padding(EdgeInsets(top: 4, leading: 8, bottom: 16, trailing: 16))
+				
+				Text("无数据")
+					.font(Font.system(size: 24))
+					.opacity((listDataSource?.isEmpty ?? false) ? 0 : 1)
 			}
-			.frame(minWidth: viewWidth + 100, minHeight: 400)
-			.padding(EdgeInsets(top: 4, leading: 8, bottom: 16, trailing: 16))
-		}.background(Color(.windowBackgroundColor))
+		}
+		.background(Color(.windowBackgroundColor))
+		.onAppear {
+			self.loadData()
+		}
+	}
+    
+	init(backAction: (() -> Void)?) {
+		self.backAction = backAction
+	}
+}
+
+/// Data
+extension ExportView {
+	
+	private func loadData() {
+		
 	}
 	
-    private func updateSeletion(model: SelectionViewModel) {
+	private func updateSeletion(model: SelectionViewModel) {
 		if let lastSelection = selectionItems.filter({ $0.isSelected }).last {
 			if lastSelection == model {
 				return
@@ -83,8 +115,16 @@ struct ExportView: View {
 		rightTitle = title
 		model.isSelected = true
     }
-    
-	init(backAction: (() -> Void)?) {
-		self.backAction = backAction
+}
+
+/// Actions
+extension ExportView {
+	
+	private func searchAction() {
+		
+	}
+	
+	private func addAction() {
+		
 	}
 }

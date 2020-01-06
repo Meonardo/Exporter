@@ -12,14 +12,23 @@ struct BuyerView: View {
     var buyers: [Buyer]
 	
 	var body: some View {
-		List {
-			ForEach(buyers) { buyer in
-				HStack(spacing: 8) {
-					Text(buyer.name)
-					Text(buyer.company)
-					Text(buyer.country)
-					Text(buyer.address)
-					Text(buyer.contact)
+		VStack(alignment: .leading) {
+			HStack(spacing: 8) {
+				Text("姓名")
+				Text("公司信息")
+				Text("国家/地区")
+				Text("详细地址")
+				Text("联系方式")
+			}
+			List {
+				ForEach(buyers) { buyer in
+					HStack(spacing: 8) {
+						Text(buyer.name)
+						Text(buyer.company)
+						Text(buyer.country)
+						Text(buyer.address)
+						Text(buyer.contact)
+					}
 				}
 			}
 		}
