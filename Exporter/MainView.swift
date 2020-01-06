@@ -13,7 +13,7 @@ struct BlueButtonStyle: ButtonStyle {
         configuration.label
             .foregroundColor(configuration.isPressed ? Color.blue : Color.white)
             .background(configuration.isPressed ? Color.white : Color.blue)
-            .cornerRadius(8.0)
+            .cornerRadius(10.0)
             .padding()
     }
 }
@@ -24,30 +24,18 @@ struct MainView: View {
 	
     var body: some View {
 		VStack(spacing: 32) {
-			Text("Hello, Wendy!")
+			Text("Welcome, Wendy!")
 			.font(Font.system(size: 40, weight: .semibold, design: .rounded))
 			.padding(.bottom, 32)
 			
-			HStack(spacing: 2) {
-				Button(action: {
-					self.showFormView()
-				}) {
-					Text("导出表格")
-						.padding(16)
-				}
-				.buttonStyle(BlueButtonStyle())
-				.font(Font.system(size: 14, weight: .semibold))
-				
-				Button(action: {
-					self.showModifyView()
-				}) {
-					Text("修改信息")
-						.padding(16)
-					}
-				.buttonStyle(BlueButtonStyle())
-				.font(Font.system(size: 14, weight: .semibold))
-				
-			}
+			Button(action: {
+                self.showFormView()
+            }) {
+                Text("导出表格")
+                    .padding(16)
+            }
+            .buttonStyle(BlueButtonStyle())
+            .font(Font.system(size: 14, weight: .semibold))
 		}
 		.frame(minWidth: 500, idealWidth: 500, maxWidth: .infinity, minHeight: 320, idealHeight: 320, maxHeight: .infinity, alignment: .center)
 		.background(Color(.windowBackgroundColor))

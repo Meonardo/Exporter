@@ -10,7 +10,6 @@ import SwiftUI
 
 struct WindowView: View {
 	
-	@State private var isExport: Bool = false
 	@State private var showMainView: Bool = true
 	
     var body: some View {
@@ -19,10 +18,11 @@ struct WindowView: View {
 				MainView(action: { (isExport) in
 					self.showMainView = false
 				})
-			}
-			ExportView(backAction: {
-				self.showMainView = true
-			}).opacity(showMainView ? 0 : 1)
+            } else {
+                ExportView(backAction: {
+                    self.showMainView = true
+                }).opacity(showMainView ? 0 : 1)
+            }
 		}
     }
 }

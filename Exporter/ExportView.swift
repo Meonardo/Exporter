@@ -8,7 +8,8 @@
 
 import SwiftUI
 
-fileprivate struct TransparentButtonStyle: ButtonStyle {
+private struct TransparentButtonStyle: ButtonStyle {
+    
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
 			.foregroundColor(.clear)
@@ -35,7 +36,8 @@ struct BuyerView: View {
 }
 
 struct SearchView: View {
-	@State private var searchText = ""
+    
+	@State var searchText = ""
 
     var body: some View {
         HStack {
@@ -47,7 +49,10 @@ struct SearchView: View {
 
 					}, onCommit: {
 						print("onCommit")
-					}).foregroundColor(.primary)
+                    })
+                        .foregroundColor(.primary)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
 					HStack {
 						Spacer()
 						Button(action: {
@@ -75,43 +80,76 @@ struct SearchView: View {
     }
 }
 
-struct SelectView: View {
+class SelectionViewModel: ObservableObject, Identifiable {
+
+    @Published var isSelected: Bool
+    var title: String
+    var count: Int
+    var selectedColor: Color
+    
+    init(title: String,
+         count: Int = 0,
+         isSelected: Bool = false,
+         selectedColor: Color = .blue) {
+        self.title = title
+        self.isSelected = isSelected
+        self.count = count
+        self.selectedColor = selectedColor
+    }
+}
+
+extension SelectionViewModel: Hashable {
+
+    static func == (lhs: SelectionViewModel, rhs: SelectionViewModel) -> Bool {
+        return lhs.count == rhs.count && lhs.title == rhs.title
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(title + "\(count)")
+    }
+}
+
+struct SelectionView: View {
 	
-	var title: String
-	var count: Int = 0
-	var selectedColor = Color.blue
-	
-	@State private var isSelected: Bool = false
-	
+    @ObservedObject var model: SelectionViewModel
+    var action: ((SelectionViewModel) -> Void)?
+    
 	var body: some View {
 		ZStack {
 			HStack {
-				Text(title)
+                Text(model.title)
 					.font(Font.system(size: 18, weight: .medium))
+                    .foregroundColor(model.isSelected ? .white : .primary)
 					.padding(10)
 				Spacer()
-				Text("\(count)")
+                Text("\(model.count)")
 					.font(Font.system(size: 14))
+                    .foregroundColor(model.isSelected ? .white : .primary)
 					.padding(.bottom, 30)
 					.padding(.trailing, 10)
 			}
 		}
-		.background(isSelected ? selectedColor : Color(.controlBackgroundColor))
+        .background(model.isSelected ? model.selectedColor : Color(.controlBackgroundColor))
 		.cornerRadius(10)
 		.onTapGesture {
-			self.isSelected.toggle()
+            self.model.isSelected.toggle()
+            self.action?(self.model)
 		}
 	}
 }
 
 struct ExportView: View {
 	
-	@State private var buyerName = ""
-	
+	@State private var searchKey = ""
+    
 	var backAction: (() -> Void)?
 	
 	private let viewWidth: CGFloat = 260
-	
+    private var selectionItems: [SelectionViewModel] = [
+        SelectionViewModel(title: "客\n户"),
+        SelectionViewModel(title: "商\n品", selectedColor: .orange),
+    ]
+    
     var body: some View {
 		HStack {
 			VStack(alignment: .leading) {
@@ -124,13 +162,16 @@ struct ExportView: View {
 						.padding(8)
 				}.buttonStyle(TransparentButtonStyle())
 				
-				SearchView()
+                SearchView(searchText: searchKey)
 					.frame(minHeight: 44)
 					.padding(.leading, 16)
 					
 				HStack(spacing: 8) {
-					SelectView(title: "客\n户")
-					SelectView(title: "商\n品", selectedColor: .orange)
+                    ForEach(selectionItems, id: \.self) { (item) in
+                        SelectionView(model: item, action: { (item) in
+                            self.updateSeletion(model: item)
+                        })
+                    }
 				}
 				.padding(.leading, 16)
 				
@@ -152,6 +193,10 @@ struct ExportView: View {
 		}.background(Color(.windowBackgroundColor))
     }
 	
+    private func updateSeletion(model: SelectionViewModel) {
+        selectionItems.filter({ $0 != model }).forEach({ $0.isSelected = false })
+    }
+    
 	init(backAction: (() -> Void)?) {
 		self.backAction = backAction
 	}
