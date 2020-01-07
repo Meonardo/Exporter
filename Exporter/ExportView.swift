@@ -19,6 +19,7 @@ struct ExportView: View {
 	
 	@State private var searchKey = ""
 	@State private var rightTitle = "客户列表"
+	@State private var isAddingInfo = false
 	
 	var backAction: (() -> Void)?
 	
@@ -66,12 +67,15 @@ struct ExportView: View {
 							.font(Font.system(size: 24, weight: .semibold))
 						Spacer()
 						Button(action: {
-							self.addAction()
+							self.isAddingInfo.toggle()
 						}) {
 							Text("+")
 								.font(Font.system(size: 24, weight: .semibold))
 						}
 						.buttonStyle(TransparentButtonStyle())
+						.sheet(isPresented: $isAddingInfo) {
+							BuyerAddView()
+						}
 					}
 					
 					BuyerView(buyers: [])

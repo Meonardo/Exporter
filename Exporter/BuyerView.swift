@@ -13,12 +13,13 @@ struct BuyerView: View {
 	
 	var body: some View {
 		VStack(alignment: .leading) {
-			HStack(spacing: 8) {
+			HStack(spacing: 32) {
 				Text("姓名")
 				Text("公司信息")
 				Text("国家/地区")
 				Text("详细地址")
 				Text("联系方式")
+				Text("添加日期")
 			}
 			List {
 				ForEach(buyers) { buyer in
@@ -28,6 +29,7 @@ struct BuyerView: View {
 						Text(buyer.country)
 						Text(buyer.address)
 						Text(buyer.contact)
+						Text(buyer.addDateString)
 					}
 				}
 			}
