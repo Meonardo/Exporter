@@ -74,7 +74,7 @@ struct ExportView: View {
 						}
 						.buttonStyle(TransparentButtonStyle())
 						.sheet(isPresented: $isAddingInfo) {
-							BuyerAddView()
+							BuyerAddView(isAddingInfo: self.$isAddingInfo)
 						}
 					}
 					

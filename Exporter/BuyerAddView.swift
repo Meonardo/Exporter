@@ -17,16 +17,18 @@ struct AddTextField: View {
 	var body: some View {
 		HStack {
 			Text(title)
-			Spacer(minLength: 20)
+				.frame(width: 120, alignment: .leading)
 			TextField(placeholder, text: $content)
 			.foregroundColor(.primary)
 			.textFieldStyle(RoundedBorderTextFieldStyle())
+				.padding(.leading, -60)
 		}
 	}
 }
 
 struct BuyerAddView: View {
 	
+	@Binding var isAddingInfo: Bool
 	@State var buyer = Buyer()
     
 	var body: some View {
@@ -36,23 +38,23 @@ struct BuyerAddView: View {
 			AddTextField(title: "国家/地区", placeholder: "输入国家/地区", content: buyer.country)
 			AddTextField(title: "详细地址", placeholder: "输入详细地址(包括城市, 街道)", content: buyer.address)
 			AddTextField(title: "联系方式", placeholder: "输入联系方式(多个如: What's app, FaceBook等)", content: buyer.contact)
-			DatePicker("选择日期和时间", selection: $buyer.addDate, displayedComponents: .date)
+			HStack {
+				Text("日期/时间 ")
+				DatePicker("", selection: $buyer.addDate, displayedComponents: .date)
+					.labelsHidden()
+					.frame(width: 200, alignment: .leading)
+			}
+			
+			
 			HStack(spacing: 12) {
 				Spacer()
 				Button("添加") {
 					
 				}
 				Button("取消") {
-					
+					self.isAddingInfo.toggle()
 				}
 			}
-			
 		}.padding()
-    }
-}
-
-struct BuyerAddView_Previews: PreviewProvider {
-    static var previews: some View {
-        BuyerAddView()
     }
 }
