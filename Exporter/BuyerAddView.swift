@@ -27,7 +27,8 @@ struct AddTextField: View {
 }
 
 struct BuyerAddView: View {
-	
+	@State private var showingAlert = false
+	@State private var alertMessage = ""
 	@Binding var isAddingInfo: Bool
 	@State var buyer = Buyer()
     
@@ -49,8 +50,15 @@ struct BuyerAddView: View {
 			HStack(spacing: 12) {
 				Spacer()
 				Button("添加") {
-					
-				}
+					if let emptyWarning = self.buyer.isEmpty() {
+						self.showingAlert = true
+						self.alertMessage = emptyWarning
+						return
+					}
+					DataBaseManager.default.update(buyer: self.buyer)
+				}.alert(isPresented: $showingAlert, content: {
+					Alert(title: Text("提示"), message: Text("\(self.alertMessage)"), dismissButton: Alert.Button.cancel(Text("好")))
+				})
 				Button("取消") {
 					self.isAddingInfo.toggle()
 				}

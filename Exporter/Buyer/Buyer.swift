@@ -9,7 +9,11 @@
 import Foundation
 
 class Buyer: Identifiable {
-	var id: String = UUID().uuidString
+	
+	lazy var id: String = {
+		let combine = name + company + country + address + contact
+		return combine.hashed(.sha1) ?? ""
+	}()
 	
     @Published var name: String
 	@Published var company: String
@@ -35,14 +39,24 @@ class Buyer: Identifiable {
 		self.addDate = Date()
 	}
 	
-//	init(name: String, company: String, country: String, address: String, contact: String, date: Date) {
-//		self.name = name
-//		self.company = company
-//		self.country = country
-//		self.address = address
-//		self.contact = contact
-//		self.addDate = date
-//	}
+	func isEmpty() -> String? {
+		if name.isEmpty {
+			return "姓名不能为空!"
+		}
+		if company.isEmpty {
+			return "公司信息不能为空!"
+		}
+		if country.isEmpty {
+			return "国家/地区不能为空!"
+		}
+		if address.isEmpty {
+			return "地址信息不能为空!"
+		}
+		if contact.isEmpty {
+			return "联系方式不能为空!"
+		}
+		return nil
+	}
 }
 
 extension Buyer: ObservableObject {
@@ -52,5 +66,34 @@ extension Buyer: ObservableObject {
 
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
+    }
+}
+
+extension DataBaseManager {
+	
+	func update(buyer: Buyer) {
+        dbQueue.inTransaction({ (db, rollback) in
+			let id = buyer.id
+            
+            let sql = "SELECT * FROM BUYER WHERE (id = (?))"
+            if let rs = try? db.executeQuery(sql, values: [id]) {
+                if rs.next() {
+                    let sql = "UPDATE BUYER SET name = ? add_date = ? country = ? company = ? contact = ? address = ? WHERE buyer_id = ?"
+                    do {
+						try db.executeUpdate(sql, values: [buyer.name, buyer.addDate.timeIntervalSince1970, buyer.country, buyer.company, buyer.contact, buyer.addDate, id])
+                    } catch {
+                        print("Unable to UPDATE Record with ERROR: \(error.localizedDescription)")
+                    }
+                } else {
+                    let sql = "INSERT INTO BUYER (name, add_date, country, company, address, buyer_id) VALUES (?, ?, ?, ?, ?, ?)"
+                    do {
+                        try db.executeUpdate(sql, values: [buyer.name, buyer.addDate.timeIntervalSince1970, buyer.country, buyer.company, buyer.contact, buyer.addDate, id])
+                    } catch {
+                        print("Unable to INSERT Record with ERROR: \(error.localizedDescription)")
+                    }
+                }
+                rs.close()
+            }
+        })
     }
 }
